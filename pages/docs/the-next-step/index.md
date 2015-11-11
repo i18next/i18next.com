@@ -15,3 +15,9 @@ Ok? Getting the swing of things yet?
 2. this second
 3. if you're really stuck, this.
 4. probably you should give up now.
+
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell

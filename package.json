@@ -1,17 +1,18 @@
 {
-  "name": "docs-site",
+  "name": "i18next.com",
   "version": "1.0.0",
   "description": "Gatsby example site",
   "main": "n/a",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gatsby serve",
     "build": "gatsby build",
     "deploy": "GATSBY_ENV=gh-pages gatsby build && cp -i ./public/bundle.js ./public/i18next.com/ && cp -i ./public/bundle.js.map ./public/i18next.com/ && git-directory-deploy --directory public/i18next.com --branch gh-pages"
   },
   "keywords": [
-    "gatsby"
+    "i18next website"
   ],
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jan Mühlemann <jan.muehlemann@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "chroma-js": "0.7.2",

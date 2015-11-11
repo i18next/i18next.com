@@ -1,0 +1,9 @@
+pre {
+  background: whitesmoke;
+  padding: 1.5rem;
+}
+
+th, td {
+    vertical-align: top;
+    padding: 10px
+}

@@ -32,7 +32,7 @@ module.exports = React.createClass({
           <title>{title}</title>
           <link rel="shortcut icon" href={this.props.favicon}/>
           <TypographyStyle/>
-          <style dangerouslySetInnerHTML={{__html:
+          {/*<style dangerouslySetInnerHTML={{__html:
             `
               a {
                 color: #884499;
@@ -69,7 +69,7 @@ module.exports = React.createClass({
                 background-image: url(${urlPrefix}/docs/some-react-code/5.jpg);
               }
             `
-          }} />
+          }} />*/}
         </head>
         <body className="landing-page">
           <div id="react-mount" dangerouslySetInnerHTML={{__html: this.props.body}} />

@@ -10,6 +10,7 @@ import typography from 'utils/typography';
 
 // Style code
 import 'css/github.css';
+import 'css/custom.css';
 
 const { rhythm, fontSizeToPx } = typography;
 
@@ -82,11 +83,11 @@ module.exports = React.createClass({
                     textDecoration: 'none',
                     marginLeft: rhythm(1/2)
                   }}
-                  href="https://github.com/gatsbyjs/gatsby"
+                  href="https://github.com/i18next/i18next"
                 >
                   Github
                 </a>
-                <Link
+                {/*<Link
                   to={`${urlPrefix}/examples/`}
                   style={{
                     background: examplesActive ? activeHeaderColors.bg : headerColors.bg,
@@ -102,7 +103,7 @@ module.exports = React.createClass({
                   }}
                 >
                   Examples
-                </Link>
+                </Link>*/}
                 <Link
                   to={`${urlPrefix}/docs/`}
                   style={{

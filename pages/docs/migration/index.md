@@ -19,8 +19,9 @@ Modules are available on npm, via bower or on github to download.
 
 __Hint:__ For i18next module: npm is on `alpha`-tag, github on v2.0.0 branch!
 
+#### browser
+
 ```js
-// browser
 import i18next from 'i18next';
 import XHR from 'i18next-xhr-backend';
 import Cache from 'i18next-localstorage-cache';
@@ -33,8 +34,11 @@ i18next
   .use(LanguageDetector)
   .use(sprintf)
   .init(options, callback);
+```
 
-// nodejs
+#### nodejs
+
+```js
 var i18next = require('i18next'),
   FilesystemBackend = require('i18next-node-fs-backend'),
   sprintf = require('i18next-sprintf-postprocessor');
@@ -43,9 +47,11 @@ i18next
   .use(FilesystemBackend)
   .use(sprintf)
   .init(options, callback);
+```
 
+#### nodejs + express
 
-// nodejs + express
+```js
 var express = require('express');
   i18next = require('i18next'),
   FilesystemBackend = require('i18next-node-fs-backend'),
@@ -88,6 +94,14 @@ compatibilityJSON | Will allow to use JSON files in v1 format. Using old interpo
 
 
 ### Not supported any longer in v2.0.0!!!
+
+- __support for older browsers__:
+
+  time to let them go - use shims when needed.
+
+- __jquery__:
+
+  we no longer act as a plugin - there will be a separate module by time of release.
 
 - __synchronous loading__:
 

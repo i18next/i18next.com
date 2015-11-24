@@ -1,6 +1,6 @@
 ---
 title: Migration Guide
-order: 1
+order: 3
 ---
 
 

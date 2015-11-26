@@ -3,7 +3,8 @@ title: Options
 order: 2
 ---
 
-## init options
+<a name="init-options"></a>
+## [init options](#init-options)
 
 option            | default setting     | description
 ----------------- | --------------------| -----------------
@@ -35,7 +36,8 @@ detection         | undefined           | options for language detection - see d
 backend           | undefined           | options for backend - see backend documentation
 cache             | undefined           | options for cache layer -- see cache documentation
 
-###### interpolation options
+<a name="interpolation-options"></a>
+###### [interpolation options](#interpolation-options)
 
 option            | default setting     | description
 ----------------- | --------------------| -----------------

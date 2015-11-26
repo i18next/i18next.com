@@ -3,15 +3,15 @@ title: Migration Guide
 order: 3
 ---
 
-
-## v1.11.x to v2.0.0
+<a name="v1-11-x--v2-0-0"></a>
+## [v1.11.x to v2.0.0](#v1-11-x--v2-0-0)
 
 While v2.0.0 is a full rewrite of the old codebase it should be possible to run in your app
 without completely rewrite your integration.
 
 
-
-### Getting started
+<a name="v1-11-x--v2-0-0-gs"></a>
+### [Getting started](#v1-11-x--v2-0-0-gs)
 
 The new version does not come with backend, cache and user language detection built in. i18next is more a core library that can be extended with modules on demand. This way it can be seamlessly used in browser, node.js or other javascript runtimes.
 
@@ -73,7 +73,8 @@ app.get('/locales/resources.json', i18nextMiddleware.getResourcesHandler(i18next
 app.listen(3000);
 ```
 
-### Running v2.0.0 with compatibility flags
+<a name="v1-11-x--v2-0-0-comp"></a>
+### [Running v2.0.0 with compatibility flags](#v1-11-x--v2-0-0-comp)
 
 Version 2.0.0 has a compatibility layer built in which allows to run it like v1.11.x. Keep in mind this layer will be removed in future version.
 
@@ -92,8 +93,8 @@ option            | description
 compatibilityAPI  | Will convert init and t options and expose old API functions. Will be removed with future update.
 compatibilityJSON | Will allow to use JSON files in v1 format. Using old interpolation prefix, suffix and no need for singular suffix [0] for singular in languages with more then just 1 plural form.
 
-
-### Not supported any longer in v2.0.0!!!
+<a name="v1-11-x--v2-0-0-depr"></a>
+### [Not supported any longer in v2.0.0!!!](#v1-11-x--v2-0-0-depr)
 
 - __support for older browsers__:
 

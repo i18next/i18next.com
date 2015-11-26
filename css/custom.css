@@ -7,3 +7,15 @@ th, td {
     vertical-align: top;
     padding: 10px
 }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  position: relative;
+  text-decoration: none;
+  color: #000
+}
+
+h1:hover a:before, h2:hover a:before, h3:hover a:before, h4:hover a:before, h5:hover a:before, h6:hover a:before {
+  position: absolute;
+  left: -20px;
+  content: '-';
+}

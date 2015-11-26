@@ -8,4 +8,6 @@ Current state is still alpha - but i highly encourage maintainers of modules usi
 
 For people using i18next in production i recommend waiting for first beta version to play around.
 
+- [API](docs/api/)
+- [Translate](translate/)
 - [Migration Guide](docs/migration/)

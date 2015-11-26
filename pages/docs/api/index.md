@@ -43,7 +43,7 @@ For details see the documentation of the added module.
 
 The translation function.
 
-Please read the [options page](../options/) for details.
+Please read the [translate pages](../../translate/) for details.
 
 <a name="exists"></a>
 ## [exists](#exists) `i18next.exists(key, options)`

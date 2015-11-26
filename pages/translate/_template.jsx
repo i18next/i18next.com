@@ -17,7 +17,7 @@ module.exports = React.createClass({
 
   render: function() {
     var childPages, docOptions, docPages;
-    rhythm = this.props.typography.rhythm;console.log(__filename)
+    rhythm = this.props.typography.rhythm;
     childPages = templateChildrenPages(__filename, this.props.state).map(function(child) {
       return {
         title: child.data.title,
@@ -28,6 +28,11 @@ module.exports = React.createClass({
     childPages = sortBy(childPages, function(child) {
       return child.order;
     });
+    // childPages.unshift({
+    //   title: '< back to API',
+    //   order: -1,
+    //   path: '/docs/api/'
+    // });
     docOptions = childPages.map(function(child) {
       return React.createElement("option", {
         "key": child.path,

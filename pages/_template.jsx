@@ -87,8 +87,8 @@ module.exports = React.createClass({
                 >
                   Github
                 </a>
-                {/*<Link
-                  to={`${urlPrefix}/examples/`}
+                <Link
+                  to={`${urlPrefix}/translate/`}
                   style={{
                     background: examplesActive ? activeHeaderColors.bg : headerColors.bg,
                     color: examplesActive ? activeHeaderColors.fg : headerColors.fg,
@@ -102,8 +102,8 @@ module.exports = React.createClass({
                     marginTop: rhythm(-1)
                   }}
                 >
-                  Examples
-                </Link>*/}
+                  Translate
+                </Link>
                 <Link
                   to={`${urlPrefix}/docs/`}
                   style={{

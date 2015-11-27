@@ -19,3 +19,25 @@ h1:hover a:before, h2:hover a:before, h3:hover a:before, h4:hover a:before, h5:h
   left: -20px;
   content: '-';
 }
+
+pre > code{
+  background: transparent !important
+}
+
+.code-12 > pre {
+  padding: 2px;
+  margin: 0;
+}
+
+.code-12 > pre > code {
+  font-size: 12px;
+}
+
+.code-10 > pre {
+  padding: 2px;
+  margin: 0;
+}
+
+.code-10 > pre > code {
+  font-size: 10px;
+}

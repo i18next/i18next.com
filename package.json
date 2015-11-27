@@ -25,6 +25,7 @@
     "react-document-title": "1.0.2",
     "react-highlight": "^0.5.1",
     "react-motion": "0.1.0",
+    "react-remarkable": "^1.1.1",
     "react-responsive-grid": "0.2.0",
     "react-router": "0.13.3",
     "typography": "0.3.6",

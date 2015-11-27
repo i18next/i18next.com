@@ -120,23 +120,26 @@ export default React.createClass({
             this.state.samples &&
             this.state.samples.map((sample) => {
               return (
-                <Highlight className='js'>
-                  {
-                    sample.run &&
-                    sample.run.map((item) => {
-                      let lines = [];
+                <div>
+                  <h4>{sample.title}</h4>
+                  <Highlight className='js'>
+                    {
+                      sample.run &&
+                      sample.run.map((item) => {
+                        let lines = [];
 
-                      let parsedArgs = item.args.map((arg) => { return jsonToJSText(JSON.stringify(arg)); });
+                        let parsedArgs = item.args.map((arg) => { return jsonToJSText(JSON.stringify(arg)); });
 
-                      if (item.fc === 't') {
-                        let txt = `i18next.${item.fc}(${parsedArgs.join(', ')}); // output: '${item.res}'`;
-                        txt += item.comment ? ` ${item.comment}\n` : '\n';
-                        lines.push(txt);
-                      }
-                      return lines.join('\n');
-                    })
-                  }
-                </Highlight>
+                        if (item.fc === 't') {
+                          let txt = `i18next.${item.fc}(${parsedArgs.join(', ')}); // output: '${item.res}'`;
+                          txt += item.comment ? ` ${item.comment}\n` : '\n';
+                          lines.push(txt);
+                        }
+                        return lines.join('\n');
+                      })
+                    }
+                  </Highlight>
+                </div>
               )
             })
           }

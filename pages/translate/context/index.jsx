@@ -7,8 +7,8 @@ module.exports = React.createClass({
   statics: {
     metadata: function() {
       return {
-        order: 4,
-        title: "Some React Code"
+        order: 6,
+        title: "Context"
       };
     }
   },
@@ -16,7 +16,7 @@ module.exports = React.createClass({
   render: function() {
     let options = {
       debug: true,
-      lng: 'de-DE',
+      lng: 'en',
       fallbackLng: 'en',
       backend: {
         loadPath: 'locales/{{lng}}/{{ns}}.json'
@@ -25,38 +25,24 @@ module.exports = React.createClass({
 
     let samples = [
       {
-        title: 'Basic translation',
+        title: 'Context',
         run: [
-          { fc: 't', args: ['key1'] },
-          { fc: 't', args: ['key2'] },
-          { fc: 't', args: ['key3'] },
-          { fc: 't', args: ['key4'], comment: '(fallback to show key)' }
-        ]
-      },
-      {
-        title: 'Override language(s)',
-        run: [
-          { fc: 't', args: ['key1', {lng: 'en'}] },
-          { fc: 't', args: ['key1', {lngs: ['de', 'en']}] }
+          { fc: 't', args: ['friend']},
+          { fc: 't', args: ['friend', {context: 'male'}]},
+          { fc: 't', args: ['friend', {context: 'female'}]}
         ]
       }
     ]
 
     const md = `
-## [Resolving a key](#resolve)
-
-The lookup order for keys is always:
-
-1) \`en-US\` language + country
-2) \`en\` language only
-3) \`fallback\` thats defined in options.fallbackLng (string or array of fallback language)
-
+Contexts could be used to define different meanings or wordings. Like eg. for different genders.
 `
 
     return (
       <DocumentTitle title={`${module.exports.metadata().title} | ${this.props.config.siteTitle}`}>
         <div>
-          <a name="resolve"></a>
+          <a name="context"></a>
+          <h2><a href='#context'>Context</a></h2>
           <Markdown>
             {md}
           </Markdown>

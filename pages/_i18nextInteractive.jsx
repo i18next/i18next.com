@@ -13,6 +13,7 @@ function jsonToJSText(str) {
   return str
     .replace(/"([^"]+(?=":))"/g, '$1') // remove " from "lng":
     .replace(/:/g, ': ') // adds whitespace after :
+    .replace(/,/g, ', ') // adds whitespace after ,
     .replace(/"/g, '\''); // replaces " with '
 }
 
@@ -89,7 +90,8 @@ export default React.createClass({
     let samples = cloneDeep(this.props.samples);
     samples.map((sample) => {
       sample.run.map((item) => {
-        item.res = this.i18next[item.fc].apply(this.i18next, item.args);
+        let res = this.i18next[item.fc].apply(this.i18next, item.args);
+        item.res = typeof res === 'object' ? JSON.stringify(res) : res;
       })
     });
     return samples;
@@ -113,15 +115,15 @@ export default React.createClass({
         <hr />
 
         <div>
-
-          <h4>Samples</h4>
-
           {
             this.state.samples &&
             this.state.samples.map((sample) => {
+              let anchorName = `${sample.title.replace(/ /g, '')}`
+              anchorName = anchorName.toLowerCase();
               return (
                 <div>
-                  <h4>{sample.title}</h4>
+                  <a name={anchorName}></a>
+                  <h4><a href={`#${anchorName}`}>{sample.title}</a></h4>
                   <Highlight className='js'>
                     {
                       sample.run &&

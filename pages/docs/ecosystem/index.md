@@ -1,0 +1,88 @@
+---
+title: i18next ecosystem
+order: 3
+---
+
+
+
+<a name="frameworks"></a>
+## [framework support](#frameworks)
+
+<div class="optionstable">
+
+framework         | description
+----------------- | --------------------
+[nodejs express middleware](https://github.com/i18next/i18next-express-middleware) | Middleware to use i18next in express.js (nodejs).
+[jquery plugin](https://github.com/i18next/i18next-jquery) | Plugin to use i18next on jquery selectors.
+
+
+</div>
+
+
+
+
+
+
+<a name="plugins"></a>
+## [plugins](#plugins)
+
+<a name="backends"></a>
+### [backends](#backends)
+
+<div class="optionstable">
+
+backend           | description
+----------------- | --------------------
+[xhr backend](https://github.com/i18next/i18next-xhr-backend) | backend layer for i18next using browsers xhr
+[nodejs filesystem](https://github.com/i18next/i18next-node-fs-backend) | node.js backend layer for i18next using fs module to load resources from filesystem
+[nodejs remote](https://github.com/i18next/i18next-node-remote-backend) | node.js backend layer for i18next using request module to load resources from another server
+
+</div>
+
+
+
+<a name="caches"></a>
+### [caches](#caches)
+
+<div class="optionstable">
+
+cache             | description
+----------------- | --------------------
+[localStorage cache](https://github.com/i18next/i18next-localStorage-cache) | caching layer for i18next using browsers localStorage
+
+</div>
+
+
+
+
+<a name="languagedetector"></a>
+### [language detector](#languagedetector)
+
+<div class="optionstable">
+
+language detector | description
+----------------- | --------------------
+[browser](https://github.com/i18next/i18next-browser-languageDetector) | language detector used in browser environment for i18next
+[nodejs express](https://github.com/i18next/i18next-express-middleware) | language detector for express.js (nodejs).
+
+</div>
+
+
+
+
+<a name="postprocessors"></a>
+### [post processors](#postprocessors)
+
+<div class="optionstable">
+
+post processor    | description
+----------------- | --------------------
+[sprintf post processor](https://github.com/i18next/i18next-sprintf-postProcessor) | sprintf post processor for i18next.
+
+</div>
+
+
+<a name="loggers"></a>
+### [loggers](#loggers)
+
+right now there is only the integrated console logger available.

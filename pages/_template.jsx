@@ -17,10 +17,11 @@ const { rhythm, fontSizeToPx } = typography;
 module.exports = React.createClass({
   mixins: [State],
   render: function() {
-    var activeHeaderColors, darker, docsActive, examplesActive, headerColors, ref1, ref2, routes, urlPrefix;
+    var activeHeaderColors, darker, docsActive, translateActive, headerColors, ref1, ref2, routes, urlPrefix;
     headerColors = colorPairsPicker(this.props.config.headerColor, {
-      contrast: 5.5
+      contrast: 0
     });
+    headerColors.fg = '#f9f9f9';
     darker = chroma(this.props.config.headerColor).darken(9).hex();
     activeHeaderColors = colorPairsPicker(darker, {
       contrast: 7
@@ -34,7 +35,7 @@ module.exports = React.createClass({
       return route.path;
     });
     docsActive = (routes.indexOf(urlPrefix + "/docs/") >= 0);
-    examplesActive = (routes.indexOf(urlPrefix + "/examples/") >= 0);
+    translateActive = (routes.indexOf(urlPrefix + "/translate/") >= 0);
 
     return (
       <div>
@@ -90,8 +91,8 @@ module.exports = React.createClass({
                 <Link
                   to={`${urlPrefix}/translate/`}
                   style={{
-                    background: examplesActive ? activeHeaderColors.bg : headerColors.bg,
-                    color: examplesActive ? activeHeaderColors.fg : headerColors.fg,
+                    background: translateActive ? activeHeaderColors.bg : headerColors.bg,
+                    color: translateActive ? activeHeaderColors.fg : headerColors.fg,
                     float: 'right',
                     textDecoration: 'none',
                     paddingLeft: rhythm(1/2),

@@ -1,6 +1,6 @@
 ---
 title: Migration Guide
-order: 3
+order: 10
 ---
 
 <a name="v1-11-x--v2-0-0"></a>

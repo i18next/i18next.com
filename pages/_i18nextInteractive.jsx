@@ -112,9 +112,7 @@ export default React.createClass({
 
         </div>
 
-        <hr />
-
-        <div>
+        <div style={{marginTop: 20}}>
           {
             this.state.samples &&
             this.state.samples.map((sample) => {
@@ -148,7 +146,7 @@ export default React.createClass({
 
         </div>
 
-        <hr />
+        <hr style={{marginTop: 60}}  />
 
         <div
           style={{
@@ -161,8 +159,7 @@ export default React.createClass({
               overflowY: 'auto',
               paddingRight: `calc(${rhythm(1/2)} - 1px)`,
               position: 'absolute',
-              width: `calc(${rhythm(16)} - 1px)`,
-              borderRight: '1px solid lightgrey'
+              width: `calc(${rhythm(16)} - 1px)`
             }}
           >
             <h6>Init options</h6>

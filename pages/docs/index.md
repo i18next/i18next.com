@@ -4,7 +4,8 @@ order: 0
 ---
 
 
-## Getting started
+<a name="getting-started"></a>
+## [Getting started](#getting-started)
 
 i18next is exported in UMD format and can be loaded via commonjs, requirejs (AMD) or will be added to global scope `window.i18next`.
 
@@ -39,7 +40,8 @@ i18next.init({
 
 
 
-## Adding plugins
+<a name="add-plugins"></a>
+## [Adding plugins](#add-plugins)
 
 i18next comes with a lot of modules to enhance the features avaiable. There are modules to:
 

@@ -19,7 +19,10 @@ framework         | description
 </div>
 
 
+<a name="utils"></a>
+## [utils](#utils)
 
+Feel free to be the first to add a util.
 
 
 
@@ -86,3 +89,9 @@ post processor    | description
 ### [loggers](#loggers)
 
 right now there is only the integrated console logger available.
+
+
+<a name="add-your-own"></a>
+### [add your own module](#add-your-own)
+
+Feel free to submit your own module by adding your module [here](https://github.com/i18next/i18next.com/blob/master/pages/docs/ecosystem/index.md) and creating a pull request.

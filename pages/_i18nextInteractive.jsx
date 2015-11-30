@@ -13,6 +13,7 @@ function jsonToJSText(str) {
   return str
     .replace(/"([^"]+(?=":))"/g, '$1') // remove " from "lng":
     .replace(/:/g, ': ') // adds whitespace after :
+    .replace(/,/g, ', ') // adds whitespace after ,
     .replace(/"/g, '\''); // replaces " with '
 }
 
@@ -97,7 +98,8 @@ export default React.createClass({
     let samples = cloneDeep(this.props.samples);
     samples.map((sample) => {
       sample.run.map((item) => {
-        item.res = this.i18next[item.fc].apply(this.i18next, item.args);
+        let res = this.i18next[item.fc].apply(this.i18next, item.args);
+        item.res = typeof res === 'object' ? JSON.stringify(res) : res;
       })
     });
     return samples;
@@ -118,40 +120,41 @@ export default React.createClass({
 
         </div>
 
-        <hr />
-
-        <div>
-
-          <h4>Samples</h4>
-
+        <div style={{marginTop: 20}}>
           {
             this.state.samples &&
             this.state.samples.map((sample) => {
+              let anchorName = `${sample.title.replace(/ /g, '')}`
+              anchorName = anchorName.toLowerCase();
               return (
-                <Highlight className='js'>
-                  {
-                    sample.run &&
-                    sample.run.map((item) => {
-                      let lines = [];
+                <div>
+                  <a name={anchorName}></a>
+                  <h4><a href={`#${anchorName}`}>{sample.title}</a></h4>
+                  <Highlight className='js'>
+                    {
+                      sample.run &&
+                      sample.run.map((item) => {
+                        let lines = [];
 
-                      let parsedArgs = item.args.map((arg) => { return jsonToJSText(JSON.stringify(arg)); });
+                        let parsedArgs = item.args.map((arg) => { return jsonToJSText(JSON.stringify(arg)); });
 
-                      if (item.fc === 't') {
-                        let txt = `i18next.${item.fc}(${parsedArgs.join(', ')}); // output: '${item.res}'`;
-                        txt += item.comment ? ` ${item.comment}\n` : '\n';
-                        lines.push(txt);
-                      }
-                      return lines.join('\n');
-                    })
-                  }
-                </Highlight>
+                        if (item.fc === 't') {
+                          let txt = `i18next.${item.fc}(${parsedArgs.join(', ')}); // output: '${item.res}'`;
+                          txt += item.comment ? ` ${item.comment}\n` : '\n';
+                          lines.push(txt);
+                        }
+                        return lines.join('\n');
+                      })
+                    }
+                  </Highlight>
+                </div>
               )
             })
           }
 
         </div>
 
-        <hr />
+        <hr style={{marginTop: 60}}  />
 
         <div
           style={{
@@ -164,8 +167,7 @@ export default React.createClass({
               overflowY: 'auto',
               paddingRight: `calc(${rhythm(1/2)} - 1px)`,
               position: 'absolute',
-              width: `calc(${rhythm(16)} - 1px)`,
-              borderRight: '1px solid lightgrey'
+              width: `calc(${rhythm(16)} - 1px)`
             }}
           >
             <h6>Init options</h6>

@@ -6,9 +6,12 @@ order: 2
 <a name="init-options"></a>
 ## [init options](#init-options)
 
-option            | default setting     | description
+<div class="optionstable">
+
+option            | default             | description
 ----------------- | --------------------| -----------------
 debug             | false               | logs out more info (console)
+resources         | undefined           | resources to initialize with
 lng               | undefined           | language to set (disables user language detection)
 fallbackLng       | 'dev'               | language to lookup key if not found on set language
 ns                | 'translation'       | string or array of namespaces
@@ -36,10 +39,14 @@ detection         | undefined           | options for language detection - see d
 backend           | undefined           | options for backend - see backend documentation
 cache             | undefined           | options for cache layer -- see cache documentation
 
+</div>
+
+<div class="optionstable">
+
 <a name="interpolation-options"></a>
 ###### [interpolation options](#interpolation-options)
 
-option            | default setting     | description
+option            | default             | description
 ----------------- | --------------------| -----------------
 escapeValue       | true                | escapes passed in values to avoid xss injection
 prefix            | '{{'                | prefix for interpolation
@@ -53,3 +60,5 @@ nestingSuffix     | ')'                 | suffix for nesting
 nestingPrefixEscaped     | undefined               | escaped prefix for nesting (regexSafe)
 nestingSuffixEscaped     | undefined               | escaped suffix for nesting (regexSafe)
 defaultVariables  | undefined           | default variables to use in interpolation replacements
+
+</div>

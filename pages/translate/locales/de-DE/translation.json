@@ -1,0 +1,8 @@
+{
+ "key1": "value of key 1 in de-DE",
+ "key": {
+   "with": {
+     "sub": "value deeper in object in de-DE"
+   }
+ }
+}

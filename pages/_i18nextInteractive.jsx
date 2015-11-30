@@ -55,11 +55,12 @@ export default React.createClass({
         if (args[0].indexOf('i18next::backendConnector: loaded ') === 0) {
           let regexp = new RegExp('namespace (.*) for language (.*)', 'g');
           let match = regexp.exec(args[0]);
-          let loaded = instance.options.backend.loadPath.replace('{{lng}}', match[1]).replace('{{ns}}', match[0]);
-          console.warn(loaded);
+          let loaded = instance.options.backend.loadPath.replace('{{lng}}', match[2]).replace('{{ns}}', match[1]);
+          if (loaded) loadedFiles.push(loaded);
         }
         self.setState({
-          log: [args].concat(self.state.log)
+          log: [args].concat(self.state.log),
+          filesLoaded: loadedFiles.length ? [loadedFiles].concat(self.state.filesLoaded) : self.state.filesLoaded
         });
         if (console && console[type]) console[type].apply(console, Array.prototype.slice.call(args));
       }
@@ -112,6 +113,12 @@ export default React.createClass({
         <div>
 
           <h4>{this.props.options.backend ? 'loaded resources' : 'passed in resources' }</h4>
+          {
+            this.props.options.backend &&
+            this.state.filesLoaded.map((resPath) => {
+              return <p style={{margin: 0}}><a href={resPath} target="blank">{resPath}</a></p>;
+            })
+          }
           <div style={{maxHeight: 250, overflowY: 'auto'}}>
             <Highlight className='json'>
               {JSON.stringify(this.state.resources, null, 2)}

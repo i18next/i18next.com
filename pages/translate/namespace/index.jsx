@@ -7,7 +7,7 @@ module.exports = React.createClass({
   statics: {
     metadata: function() {
       return {
-        order: 1,
+        order: 2,
         title: "Namespaces"
       };
     }

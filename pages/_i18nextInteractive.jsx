@@ -20,12 +20,15 @@ export default React.createClass({
   getInitialState() {
     return {
       ready: false,
-      log: []
+      log: [],
+      filesLoaded: []
     }
   },
 
   componentWillMount() {
     var self = this;
+
+    let instance = i18next.createInstance();
 
     this.setState({
       origOptions: cloneDeep(this.props.options)
@@ -47,14 +50,19 @@ export default React.createClass({
       },
 
       _output(type, args) {
+        let loadedFiles = [];
+        if (args[0].indexOf('i18next::backendConnector: loaded ') === 0) {
+          let regexp = new RegExp('namespace (.*) for language (.*)', 'g');
+          let match = regexp.exec(args[0]);
+          let loaded = instance.options.backend.loadPath.replace('{{lng}}', match[1]).replace('{{ns}}', match[0]);
+          console.warn(loaded);
+        }
         self.setState({
           log: [args].concat(self.state.log)
         });
         if (console && console[type]) console[type].apply(console, Array.prototype.slice.call(args));
       }
     };
-
-    let instance = i18next.createInstance();
 
     let ready = (err, t) => {
       this.setState({

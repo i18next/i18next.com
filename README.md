@@ -1,11 +1,28 @@
-# prerequisition
+# introduction
 
-`npm install -g gatsby`
+This is the code running the website for i18next.com.
 
-# serve hot reload
+# contribution
 
-`gatsby serve` ---> localhost:8000
+Contribution is very welcome.
 
-# deploy
+1) Fork the project
+2) Do your changes on files in `/pages` (see below how to run the local hot reload server)
+3) Fill a pull request
 
-`npm run deploy`
+### serve hot reload
+
+```
+# preconditions
+$ npm install -g gatsby
+$ npm install
+```
+
+```
+# serve localhost:8000
+$ gatsby serve
+```
+
+### deploy
+
+`$ npm run deploy`

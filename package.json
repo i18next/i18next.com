@@ -6,8 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "gatsby serve",
-    "build": "GATSBY_ENV=gh-pages gatsby build && gulp copy",
-    "deploy": "GATSBY_ENV=gh-pages gatsby build && gulp copy && git-directory-deploy --directory public/i18next.com --branch gh-pages"
+    "build": "gatsby build && gulp copy",
+    "deploy": "gatsby build && gulp copy && git-directory-deploy --directory public/i18next.com --branch gh-pages",
+    "_buildWithoutDomain": "GATSBY_ENV=gh-pages gatsby build && gulp copy",
+    "_deployWithoutDomain": "GATSBY_ENV=gh-pages gatsby build && gulp copy && git-directory-deploy --directory public/i18next.com --branch gh-pages"
   },
   "keywords": [
     "i18next website"

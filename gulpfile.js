@@ -10,5 +10,10 @@ gulp.task('copyLocales', function() {
    .pipe(gulp.dest('./public/i18next.com/translate/'));
 });
 
+gulp.task('copyStatic', function() {
+   gulp.src('./static/**/*')
+   .pipe(gulp.dest('./public/'));
+});
 
-gulp.task('copy', ['copyBundle', 'copyLocales']);
+
+gulp.task('copy', ['copyBundle', 'copyLocales', 'copyStatic']);

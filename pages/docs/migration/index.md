@@ -17,8 +17,6 @@ The new version does not come with backend, cache and user language detection bu
 
 Modules are available on npm, via bower or on github to download.
 
-__Hint:__ For i18next module: npm is on `alpha`-tag, github on v2.0.0 branch!
-
 #### browser
 
 ```js
@@ -35,6 +33,8 @@ i18next
   .use(sprintf)
   .init(options, callback);
 ```
+
+__hint for jquery user:__ use additional [jquery-i18next](https://github.com/i18next/jquery-i18next)
 
 #### nodejs
 
@@ -102,7 +102,7 @@ compatibilityJSON | Will allow to use JSON files in v1 format. Using old interpo
 
 - __jquery__:
 
-  we no longer act as a plugin - there will be a separate module by time of release.
+  use additional [jquery-i18next](https://github.com/i18next/jquery-i18next)
 
 - __synchronous loading__:
 

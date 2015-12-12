@@ -9,15 +9,15 @@ order: 0
 
 i18next is exported in UMD format and can be loaded via commonjs, requirejs (AMD) or will be added to global scope `window.i18next`.
 
-Source can be loaded via [npm](https://www.npmjs.com/package/i18next), bower or [downloaded](https://github.com/i18next/i18next/blob/2.0.0/i18next.min.js) from this repo.
+Source can be loaded via [npm](https://www.npmjs.com/package/i18next), bower or [downloaded](https://github.com/i18next/i18next/blob/master/i18next.min.js) from this repo.
 
 
 ```bash
 # npm
-$ npm install i18next@beta
+$ npm install i18next
 
 # bower
-$ bower install i18next/i18next#2.0.0
+$ bower install i18next/i18next
 ```
 
 ```js

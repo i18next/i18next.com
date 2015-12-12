@@ -14,7 +14,7 @@ framework         | description
 ----------------- | --------------------
 [react-i18next](https://github.com/i18next/react-i18next) | Higher order component and append i18next to context.
 [nodejs express middleware](https://github.com/i18next/i18next-express-middleware) | Middleware to use i18next in express.js (nodejs).
-[jquery plugin](https://github.com/i18next/i18next-jquery) | Plugin to use i18next on jquery selectors.
+[jquery plugin](https://github.com/i18next/jquery-i18next) | Plugin to use i18next on jquery selectors.
 
 
 </div>

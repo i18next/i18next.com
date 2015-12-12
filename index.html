@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0"><title>i18next: internationalization framework | i18next v2 - beta</title><link rel="shortcut icon"><style id="react-typography">/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  line-height: 1.5em;
+  overflow-y: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: hsl(0,0%,20%);
+  font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+/* Make image responsive by default */
+img {
+  max-width: 100%;
+}
+
+/* All block elements get one rhythm of bottom margin. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dl,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+blockquote,
+form,
+noscript,
+iframe,
+img,
+hr {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+blockquote {
+  margin: 1.5rem 3.75rem;
+}
+
+b,
+strong {
+  font-weight: 600
+}
+
+hr {
+  background: hsl(0,0%,80%);
+  border: none;
+  height: 1px;
+  margin-bottom: calc(1.5rem - 1px);
+}
+
+ol,
+ul {
+  list-style-position: outside;
+  margin-left: 1.5rem;
+}
+
+ul li,
+ol li {
+  padding-left: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+
+table {
+  font-size: 1rem;
+  line-height: 2.25rem;
+  width: 100%;
+}
+
+thead {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(0,0%,20%);
+  font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.728rem;
+  line-height: 2.25rem;
+}
+
+h2 {
+  font-size: 1.44rem;
+  line-height: 2.25rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-size: 1.12924rem;
+  line-height: 1.5rem;
+}
+
+h5 {
+  font-size: 1.06266rem;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+</style></head><body class="landing-page"><div id="react-mount"><div data-reactid=".1ldk7wk4w74" data-react-checksum="-1597837009"><div style="background:rgb(0,150,136);color:#f9f9f9;margin-bottom:2.25rem;" data-reactid=".1ldk7wk4w74.0"><div style="max-width:960px;margin-left:auto;margin-right:auto;padding:0.75rem;padding-bottom:0.75rem;" data-reactid=".1ldk7wk4w74.0.0"><div style="padding:0.75rem 0;" data-reactid=".1ldk7wk4w74.0.0.0"><div style="float:left;margin-left:0%;margin-right:1.694915254237288%;width:32.20338983050847%;clear:none;height:24px;" data-reactid=".1ldk7wk4w74.0.0.0.0:$=10:0"><a style="text-decoration:none;color:#f9f9f9;font-size:1.59375rem;" class=" active" href="/" data-reactid=".1ldk7wk4w74.0.0.0.0:$=10:0.0:$=10:0">i18next v2 - beta</a><span style="display:block;clear:both;" data-reactid=".1ldk7wk4w74.0.0.0.0:$=10:0.1"> </span></div><div style="float:right;margin-left:0%;margin-right:0%;width:66.10169491525423%;clear:none;" data-reactid=".1ldk7wk4w74.0.0.0.0:$=11:0"><a style="float:right;color:#f9f9f9;text-decoration:none;margin-left:0.75rem;" href="https://github.com/i18next/i18next" data-reactid=".1ldk7wk4w74.0.0.0.0:$=11:0.0:$=10:0">Github</a><a style="background:rgb(0,150,136);color:#f9f9f9;float:right;text-decoration:none;padding-left:0.75rem;padding-right:0.75rem;padding-bottom:1.5rem;margin-bottom:-1.5rem;padding-top:1.5rem;margin-top:-1.5rem;" class="" href="/translate/" data-reactid=".1ldk7wk4w74.0.0.0.0:$=11:0.0:$=11:0">Translate</a><a style="background:rgb(0,150,136);color:#f9f9f9;float:right;text-decoration:none;padding-left:0.75rem;padding-right:0.75rem;padding-bottom:1.5rem;margin-bottom:-1.5rem;padding-top:1.5rem;margin-top:-1.5rem;" class="" href="/docs/" data-reactid=".1ldk7wk4w74.0.0.0.0:$=11:0.0:$=12:0">Documentation</a><span style="display:block;clear:both;" data-reactid=".1ldk7wk4w74.0.0.0.0:$=11:0.1"> </span></div><span style="display:block;clear:both;" data-reactid=".1ldk7wk4w74.0.0.0.1"> </span></div><span style="display:block;clear:both;" data-reactid=".1ldk7wk4w74.0.0.1"> </span></div></div><div style="max-width:960px;margin-left:auto;margin-right:auto;padding:1.5rem 0.75rem;padding-top:0;" data-reactid=".1ldk7wk4w74.1"><div class="markdown" data-reactid=".1ldk7wk4w74.1.0"><h1 data-reactid=".1ldk7wk4w74.1.0.0">i18next: internationalization framework</h1><div data-reactid=".1ldk7wk4w74.1.0.1"><p>i18next is a very popular internationalization framework for browser or any other javascript environment (eg. node.js).</p>
+<p>The current v2 release is a big milestone in keeping continuity for your translation projects by keeping a stable, modern API started in 2011.</p>
+<p>i18next provides:</p>
+<ul>
+<li>Flexible connection to backend (loading translations via xhr, …)</li>
+<li>Optional caching, user language detection, …</li>
+<li>Proper pluralizations</li>
+<li>Translation context</li>
+<li>Nesting, Variable replacement</li>
+<li>Flexibility: prefer keybased or gettext style? No problem…</li>
+<li>…</li>
+</ul>
+<p>For more information visit the website:</p>
+<ul>
+<li><a href="http://i18next.github.io/i18next.com/docs/">Getting started</a></li>
+<li><a href="http://i18next.github.io/i18next.com/translate/">Translation Functionality</a></li>
+<li><a href="http://i18next.github.io/i18next.com/docs/api/">API</a></li>
+<li><a href="http://i18next.github.io/i18next.com/docs/migration/">Migration Guide from v1.11.x</a></li>
+</ul>
+<p>Our focus is providing the core to building a booming ecosystem. Independent of the building blocks you choose, be it react, angular or even good old jquery proper translation capabilities are just one <a href="http://i18next.github.io/i18next.com/docs/ecosystem/#frameworks">step away</a>.</p>
+<h2>download</h2>
+<p>Source can be loaded via <a href="https://www.npmjs.com/package/i18next">npm</a>, bower or <a href="https://github.com/i18next/i18next/blob/2.0.0/i18next.min.js">downloaded</a> from this repo.</p>
+<pre><code class="language-bash"><span class="hljs-comment"># npm</span>
+$ npm install i18next@beta
+
+<span class="hljs-comment"># bower</span>
+$ bower install i18next/i18next<span class="hljs-comment">#2.0.0</span>
+</code></pre>
+</div></div><span style="display:block;clear:both;" data-reactid=".1ldk7wk4w74.1.1"> </span></div></div></div><script src="/bundle.js"></script></body></html>

@@ -82,6 +82,7 @@ language detector | description
 post processor    | description
 ----------------- | --------------------
 [sprintf post processor](https://github.com/i18next/i18next-sprintf-postProcessor) | sprintf post processor for i18next.
+[interval plurals](https://github.com/i18next/i18next-intervalPlural-postProcessor) | interval based plurals like. "One Item", "A few items", "A lot of items"
 
 </div>
 

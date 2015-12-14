@@ -23,7 +23,9 @@ framework         | description
 <a name="utils"></a>
 ## [utils](#utils)
 
-Feel free to be the first to add a util.
+util              | description
+----------------- | --------------------
+[i18next-gettext-converter](https://github.com/i18next/i18next-gettext-converter) | Converts gettext .mo or .po to 18next json format and vice versa.
 
 
 

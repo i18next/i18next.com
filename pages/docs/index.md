@@ -17,7 +17,7 @@ Source can be loaded via [npm](https://www.npmjs.com/package/i18next), bower or 
 $ npm install i18next
 
 # bower
-$ bower install i18next/i18next
+$ bower install i18next
 ```
 
 ```js

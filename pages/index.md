@@ -24,6 +24,7 @@ For more information visit the website:
 - [Translation Functionality](/translate/)
 - [API](/docs/api/)
 - [Migration Guide from v1.11.x](/docs/migration/)
+- [Old v1.11.x Documentation](http://i18next.github.io/i18next/)
 
 
 
@@ -37,8 +38,8 @@ Source can be loaded via [npm](https://www.npmjs.com/package/i18next), bower or 
 
 ```bash
 # npm
-$ npm install i18next@beta
+$ npm install i18next
 
 # bower
-$ bower install i18next/i18next#2.0.0
+$ bower install i18next
 ```

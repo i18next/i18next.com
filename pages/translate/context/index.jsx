@@ -7,7 +7,7 @@ module.exports = React.createClass({
   statics: {
     metadata: function() {
       return {
-        order: 6,
+        order: 7,
         title: "Context"
       };
     }

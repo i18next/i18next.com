@@ -7,7 +7,7 @@ module.exports = React.createClass({
   statics: {
     metadata: function() {
       return {
-        order: 7,
+        order: 8,
         title: "Return Objects"
       };
     }

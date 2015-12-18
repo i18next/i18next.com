@@ -76,13 +76,19 @@ export default React.createClass({
     if (this.props.options.backend) {
       instance
         .use(Backend)
-        .use(stateLogger)
-        .init(this.props.options, ready);
+        .use(stateLogger);
     } else {
       instance
-        .use(stateLogger)
-        .init(this.props.options, ready);
+        .use(stateLogger);
     }
+
+    if (this.props.use) {
+      this.props.use.forEach(module => {
+        instance.use(module);
+      });
+    }
+
+    instance.init(this.props.options, ready);
 
     instance.on('loaded', (loaded) => {
       this.setState({

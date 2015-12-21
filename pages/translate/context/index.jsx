@@ -31,6 +31,15 @@ module.exports = React.createClass({
           { fc: 't', args: ['friend', {context: 'male'}]},
           { fc: 't', args: ['friend', {context: 'female'}]}
         ]
+      },
+      {
+        title: 'Context with plural combined',
+        run: [
+          { fc: 't', args: ['friend', {context: 'male', count: 1}]},
+          { fc: 't', args: ['friend', {context: 'male', count: 1}]},
+          { fc: 't', args: ['friend', {context: 'female', count: 100}]},
+          { fc: 't', args: ['friend', {context: 'female', count: 100}]}
+        ]
       }
     ]
 

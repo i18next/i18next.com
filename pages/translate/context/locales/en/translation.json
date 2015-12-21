@@ -1,5 +1,7 @@
 {
   "friend": "A friend",
   "friend_male": "A boyfriend",
-  "friend_female": "A girlfriend"
+  "friend_female": "A girlfriend",
+  "friend_male_plural": "{{count}} boyfriends",
+  "friend_female_plural": "{{count}} girlfriends"
 }

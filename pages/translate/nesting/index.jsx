@@ -35,6 +35,12 @@ module.exports = React.createClass({
         run: [
           { fc: 't', args: ['girlsAndBoys', {count: 2, girls: 3}] }
         ]
+      },
+      {
+        title: 'With Interpolated nesting value',
+        run: [
+          { fc: 't', args: ['key2', {val: '$t(key1)'}] }
+        ]
       }
     ]
 

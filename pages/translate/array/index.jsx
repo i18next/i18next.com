@@ -32,6 +32,12 @@ module.exports = React.createClass({
         ]
       },
       {
+        title: 'Join with Interpolation',
+        run: [
+          { fc: 't', args: ['arrayJoinWithInterpolation', {myVar: 'interpolate'}], comment: '(by option joinArray: "+")'}
+        ]
+      },
+      {
         title: 'Access',
         run: [
           { fc: 't', args: ['arrayOfObjects.0.name'] }

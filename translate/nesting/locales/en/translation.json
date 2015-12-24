@@ -3,5 +3,7 @@
   "girlsAndBoys": "$t(girls, {\"count\": {{girls}} }) and {{count__ boy",
   "girlsAndBoys_plural": "$t(girls, {\"count\": {{girls}} }) and {{count}} boys",
   "girls": "{{count}} girl",
-  "girls_plural": "{{count}} girls"
+  "girls_plural": "{{count}} girls",
+  "key1": "hello world",
+  "key2": "say: {{val}}"
 }

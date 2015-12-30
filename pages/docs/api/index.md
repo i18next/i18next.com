@@ -55,6 +55,15 @@ Uses the same resolve functionality as the `t` function and returns true if a ke
 
 Returns a `t` function that defaults to given language or namespace.
 
+```js
+let de = i18next.getFixedT('de');
+de('myKey');
+
+// or fix the defaultNamespace
+let anotherNamespace = i18next.getFixedT(null, 'anotherNamespace');
+anotherNamespace('anotherNamespaceKey'); // no need to prefix ns i18n.t('anotherNamespace:anotherNamespaceKey');
+```
+
 <a name="change-language"></a>
 ## [changeLanguage](#change-language) `i18next.changeLanguage(lng, callback)`
 
@@ -70,6 +79,21 @@ i18next.changeLanguage('en', (err, t) => {
 ## [loadNamespaces](#load-namespaces) `i18next.loadNamespaces(ns, callback)`
 
 Loads additional namespaces not defined in init options.
+
+```js
+i18next.loadNamespaces('myNamespace', (err, t) => { /* resources have been loaded */ });
+i18next.loadNamespaces(['myNamespace1', 'myNamespace2'], (err, t) => { /* resources have been loaded */ });
+```
+
+<a name="load-languages"></a>
+## [loadLanguages](#load-languages) `i18next.loadLanguages(lngs, callback)`
+
+Loads additional languages not defined in init options.
+
+```js
+i18next.loadLanguages('de', (err, t) => { /* resources have been loaded */ });
+i18next.loadLanguages(['de', 'fr'], (err, t) => { /* resources have been loaded */ });
+```
 
 <a name="load-resources"></a>
 ## [loadResources](#load-resources) `i18next.loadResources(callback)`

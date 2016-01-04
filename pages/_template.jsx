@@ -21,16 +21,13 @@ module.exports = React.createClass({
     headerColors = colorPairsPicker(this.props.config.headerColor, {
       contrast: 0
     });
-    headerColors.fg = '#f9f9f9';
+    headerColors.fg = '#009688';
     darker = chroma(this.props.config.headerColor).darken(9).hex();
     activeHeaderColors = colorPairsPicker(darker, {
       contrast: 7
     });
-    if (__GH_PAGES__) {
-      urlPrefix = this.props.config.ghPagesURLPrefix;
-    } else {
-      urlPrefix = "";
-    }
+    activeHeaderColors.bg = '#FBFBFB';
+    urlPrefix = this.props.config.ghPagesURLPrefix;
     routes = this.getRoutes().map(function(route) {
       return route.path;
     });
@@ -73,7 +70,8 @@ module.exports = React.createClass({
                     fontSize: fontSizeToPx("25.5px").fontSize
                   }}
                 >
-                  {this.props.config.siteTitle}
+                  {/*this.props.config.siteTitle*/}
+                  <img className='brand' src="/img/logo.svg" />
                 </Link>
               </Span>
               <Span columns={8} last={true}>

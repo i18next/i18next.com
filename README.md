@@ -13,14 +13,14 @@ Contribution is very welcome.
 ### serve hot reload
 
 ```
-# preconditions
+# preconditions (currently gatsby v0.7.6)
 $ npm install -g gatsby
 $ npm install
 ```
 
 ```
 # serve localhost:8000
-$ gatsby serve
+$ gatsby develop
 ```
 
 ### deploy

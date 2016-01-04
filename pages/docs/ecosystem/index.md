@@ -6,7 +6,7 @@ order: 3
 
 
 <a name="frameworks"></a>
-## [framework support](#frameworks)
+### [framework support](#frameworks)
 
 <div class="optionstable">
 
@@ -21,19 +21,21 @@ framework         | description
 
 
 <a name="utils"></a>
-## [utils](#utils)
+### [utils](#utils)
+
+<div class="optionstable">
 
 util              | description
 ----------------- | --------------------
 [i18next-gettext-converter](https://github.com/i18next/i18next-gettext-converter) | Converts gettext .mo or .po to 18next json format and vice versa.
 
-
+</div>
 
 <a name="plugins"></a>
-## [plugins](#plugins)
+### [plugins](#plugins)
 
 <a name="backends"></a>
-### [backends](#backends)
+#### [backends](#backends)
 
 <div class="optionstable">
 
@@ -48,7 +50,7 @@ backend           | description
 
 
 <a name="caches"></a>
-### [caches](#caches)
+#### [caches](#caches)
 
 <div class="optionstable">
 
@@ -62,7 +64,7 @@ cache             | description
 
 
 <a name="languagedetector"></a>
-### [language detector](#languagedetector)
+#### [language detector](#languagedetector)
 
 <div class="optionstable">
 

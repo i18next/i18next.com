@@ -4,7 +4,7 @@ order: 2
 ---
 
 <a name="init-options"></a>
-## [init options](#init-options)
+### [init options](#init-options)
 
 <div class="optionstable">
 
@@ -44,7 +44,7 @@ cache             | undefined           | options for cache layer -- see cache d
 <div class="optionstable">
 
 <a name="interpolation-options"></a>
-###### [interpolation options](#interpolation-options)
+#### [interpolation options](#interpolation-options)
 
 option            | default             | description
 ----------------- | --------------------| -----------------

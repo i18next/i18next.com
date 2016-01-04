@@ -3,14 +3,28 @@ colors teal from
 https://www.google.com/design/spec/style/color.html#color-color-palette
 */
 
+body {
+  background: #FBFBFB;
+}
+
+.brand {
+  height: 48px;
+  margin-top: -0.5em;
+}
+
 pre {
   background: #ECEFF1;
   padding: 1.5rem;
 }
 
 th, td {
-    vertical-align: top;
-    padding: 10px
+  vertical-align: top;
+  padding: 10px
+}
+
+h1 {
+  font-size: 2.61803rem;
+  line-height: 3rem;
 }
 
 h1, h2, h3, h4, h5, h6 {

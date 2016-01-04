@@ -4,7 +4,7 @@ order: 10
 ---
 
 <a name="v1-11-x--v2-0-0"></a>
-## [v1.11.x to v2.0.0](#v1-11-x--v2-0-0)
+### [v1.11.x to v2.0.0](#v1-11-x--v2-0-0)
 
 While v2.0.0 is a full rewrite of the old codebase it should be possible to run in your app
 without completely rewrite your integration.

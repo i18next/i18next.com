@@ -2,7 +2,7 @@ import React from 'react';
 import DocumentTitle from 'react-document-title';
 import Interactive from '../../_i18nextInteractive';
 import Markdown from 'react-remarkable';
-import PluralInterval from 'i18next-intervalplural-postprocessor';
+import PluralInterval from 'i18next-intervalplural-postprocessor/lib';
 
 module.exports = React.createClass({
   statics: {

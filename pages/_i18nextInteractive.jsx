@@ -122,7 +122,7 @@ export default React.createClass({
           {
             this.props.options.backend &&
             this.state.filesLoaded.map((resPath) => {
-              return <p style={{margin: 0}}><a href={resPath} target="blank">{resPath}</a></p>;
+              return <p key={resPath} style={{margin: 0}}><a href={resPath} target="blank">{resPath}</a></p>;
             })
           }
           <div style={{maxHeight: 250, overflowY: 'auto'}}>
@@ -140,7 +140,7 @@ export default React.createClass({
               let anchorName = `${sample.title.replace(/ /g, '')}`
               anchorName = anchorName.toLowerCase();
               return (
-                <div>
+                <div key={sample.title}>
                   <a name={anchorName}></a>
                   <h4><a href={`#${anchorName}`}>{sample.title}</a></h4>
                   <Highlight className='js'>
@@ -198,10 +198,10 @@ export default React.createClass({
           >
             <h6>Console</h6>
             {
-              this.state.log.map((item) => {
-                if (item.length === 1) return <div style={{fontSize: 12, marginBottom: 20}}><span>{item[0]}</span></div>;
+              this.state.log.map((item, i) => {
+                if (item.length === 1) return <div key={i} style={{fontSize: 12, marginBottom: 20}}><span>{item[0]}</span></div>;
                 if (item.length === 2) return (
-                  <div style={{fontSize: 12, marginBottom: 20}}>
+                  <div key={i}  style={{fontSize: 12, marginBottom: 20}}>
                     <span>{item[0]}</span>
                     <div className='code-10' style={{fontSize: 8, padding: 2, maxHeight: 100, overflowY: 'auto'}}>
                       <Highlight className='json'>
@@ -211,7 +211,7 @@ export default React.createClass({
                   </div>
                 );
                 if (item.length > 2) return (
-                  <div style={{fontSize: 12, marginBottom: 20}}>
+                  <div key={i}  style={{fontSize: 12, marginBottom: 20}}>
                     <span>{item[0]}</span>
                     <div className='code-10' style={{fontSize: 8, padding: 2, maxHeight: 100, overflowY: 'auto'}}>
                       <Highlight className='json'>

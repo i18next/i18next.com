@@ -154,6 +154,11 @@ Gets fired when resources got added.
 
 Gets fired when resources got removed.
 
+<a name="on-language-changed"></a>
+## [languageChanged](#on-language-changed) `i18next.on('languageChanged', function(lng) {})`
+
+Gets fired when changeLanguage got called.
+
 
 
 

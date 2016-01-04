@@ -1,0 +1,3 @@
+{
+  "nesting1": "1 $t(nesting2)"
+}

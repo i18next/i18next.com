@@ -18,7 +18,7 @@ i18next provides:
 - ...
 
 
-For more information visit the website:
+For more information visit:
 
 - [Getting started](/docs/)
 - [Translation Functionality](/translate/)
@@ -28,10 +28,10 @@ For more information visit the website:
 
 
 
-Our focus is providing the core to building a booming ecosystem. Independent of the building blocks you choose, be it react, angular or even good old jquery proper translation capabilities are just [one step away](/docs/ecosystem/#frameworks).
+Our focus is providing the core for building a booming ecosystem. Independent of the building blocks you choose, be it react, angular or even good old jquery - proper translation capabilities are just [one step away](/docs/ecosystem/#frameworks).
 
 
-## download
+### download
 
 Source can be loaded via [npm](https://www.npmjs.com/package/i18next), bower or [downloaded](https://github.com/i18next/i18next/blob/master/i18next.min.js) from this repo.
 
@@ -43,3 +43,9 @@ $ npm install i18next
 # bower
 $ bower install i18next
 ```
+
+### Projects / Companys using i18next
+
+<a href="https://enketo.org" class="projectlink" target="_blank"><img src="/img/projects/enketo.png" /></a>
+
+Want to see your project or company here: Add it [here](https://github.com/i18next/i18next.com/blob/master/pages/index.md) and send a pull request.

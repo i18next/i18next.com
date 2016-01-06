@@ -12,6 +12,10 @@ body {
   margin-top: -0.5em;
 }
 
+.projectlink {
+  height: 60px;
+}
+
 pre {
   background: #ECEFF1;
   padding: 1.5rem;

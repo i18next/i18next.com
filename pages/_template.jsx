@@ -11,6 +11,7 @@ import typography from 'utils/typography';
 // Style code
 import 'css/github.css';
 import 'css/custom.css';
+import 'css/flexboxgrid.css';
 
 const { rhythm, fontSizeToPx } = typography;
 

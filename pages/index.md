@@ -6,6 +6,9 @@ i18next is a very popular internationalization framework for browser or any othe
 
 The current v2 release is a big milestone in keeping continuity for your translation projects by keeping a stable, modern API.
 
+<div class="row">
+<div class="col-md-6 col-xs-12">
+
 i18next provides:
 
 - Flexible connection to [backend](/docs/ecosystem/#backends) (loading translations via xhr, ...)
@@ -17,6 +20,9 @@ i18next provides:
 - Extensibility: eg. [sprintf](/docs/ecosystem/#postprocessors)
 - ...
 
+</div>
+
+<div class="col-md-6 col-xs-12">
 
 For more information visit:
 
@@ -26,7 +32,8 @@ For more information visit:
 - [Migration Guide from v1.11.x](/docs/migration/)
 - [Old v1.11.x Documentation](http://i18next.github.io/i18next/)
 
-
+</div>
+</div>
 
 Our focus is providing the core for building a booming ecosystem. Independent of the building blocks you choose, be it react, angular or even good old jquery - proper translation capabilities are just [one step away](/docs/ecosystem/#frameworks).
 

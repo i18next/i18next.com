@@ -75,6 +75,16 @@ i18next.changeLanguage('en', (err, t) => {
 });
 ```
 
+<a name="language"></a>
+### [language](#language) `i18next.language`
+
+gets the set language.
+
+<a name="languages"></a>
+### [languages](#languages) `i18next.languages`
+
+gets an array of language-codes that will be used it array order to lookup the translation value.
+
 <a name="load-namespaces"></a>
 ### [loadNamespaces](#load-namespaces) `i18next.loadNamespaces(ns, callback)`
 

@@ -149,6 +149,11 @@ Gets fired after initialization.
 
 Gets fired on loading resources.
 
+<a name="on-failedloading"></a>
+### [failedLoading](on-failedloading) `i18next.on('failedLoading', function(lng, ns, msg) {})`
+
+Gets fired on loading resources.
+
 <a name="on-missing-key"></a>
 ### [missingKey](#on-missing-key) `i18next.on('missingKey', function(lngs, namespace, key, res) {})`
 

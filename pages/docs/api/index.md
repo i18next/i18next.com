@@ -150,7 +150,7 @@ Gets fired after initialization.
 Gets fired on loading resources.
 
 <a name="on-failedloading"></a>
-### [failedLoading](on-failedloading) `i18next.on('failedLoading', function(lng, ns, msg) {})`
+### [failedLoading](#on-failedloading) `i18next.on('failedLoading', function(lng, ns, msg) {})`
 
 Gets fired on loading resources.
 

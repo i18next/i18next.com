@@ -3,8 +3,33 @@ title: Options
 order: 2
 ---
 
+<a name="t-options"></a>
+### [t options](#t-options) `i18next.t(key, options)`
+
+<div class="optionstable">
+
+option            | description
+----------------- | -----------------
+defaultValue      | defaultValue to return if translation not found
+count             | count value used for plurals
+context           | used for contexts (eg. male|female)
+replace           | object with vars for interpolation - optional as you can put them directly in options
+lng               | language to use
+lngs              | languages to use
+fallbackLng       | language to lookup key if not found on set language
+ns                | string or array of namespaces
+keySeparator      | char to separate keys
+nsSeparator       | char to split namespace from key
+returnObjects     | accessing an object not a translation string
+joinArrays        | char, eg. '\n' that arrays will be joined by
+postProcess       | string or array of postProcessors to apply
+interpolation     | see interpolation options below
+
+</div>
+
+
 <a name="init-options"></a>
-### [init options](#init-options)
+### [init options](#init-options) `i18next.init(options, callback)`
 
 <div class="optionstable">
 

@@ -75,6 +75,8 @@ i18next.changeLanguage('en', (err, t) => {
 });
 ```
 
+**HINT:** For easy testing - setting lng to 'cimode' will set t function to return the key.
+
 <a name="language"></a>
 ### [language](#language) `i18next.language`
 

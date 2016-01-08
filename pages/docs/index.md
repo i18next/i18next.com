@@ -40,7 +40,7 @@ i18next.init({
 <a name="add-plugins"></a>
 ## [Adding plugins](#add-plugins)
 
-i18next comes with a lot of modules to enhance the features avaiable. There are modules to:
+i18next comes with a lot of modules to enhance the features available. There are modules to:
 
 - load resources, eg. via xhr or from filesystem (node.js)
 - cache resources on client, eg. localStorage

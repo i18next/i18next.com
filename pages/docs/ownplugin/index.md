@@ -24,7 +24,7 @@ Backend plugins are used to load data for i18next.
 ```js
 {
   type: 'backend',
-  init: function(services, options) { /* use services and options */ },
+  init: function(services, backendOptions, i18nextOptions) { /* use services and options */ },
   read: function(language, namespace, callback) { /* return resources */ },
 
   // optional
@@ -41,7 +41,7 @@ Cache plugins are used to cache resources on consumers.
 ```js
 {
   type: 'cache',
-  init: function(services, options) { /* use services and options */ },
+  init: function(services, cacheOptions, i18nextOptions) { /* use services and options */ },
   load: function(lngs, callback) { /* load resources for languages */ },
   save: function(store) { /* update cache */ },
 }
@@ -55,7 +55,7 @@ Language Detector plugins are used to detect language in user land.
 ```js
 {
   type: 'languageDetector',
-  init: function(services, options) { /* use services and options */ },
+  init: function(services, detectorOptions, i18nextOptions) { /* use services and options */ },
   detect: function() { /* return detected language */ },
   cacheUserLanguage: function(lng) { /* cache language */ },
 }

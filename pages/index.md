@@ -54,5 +54,6 @@ $ bower install i18next
 ### Projects / Companys using i18next
 
 <a href="https://enketo.org" class="projectlink" target="_blank"><img src="/img/projects/enketo.png" /></a>
+<a href="http://www.viima.com" class="projectlink" target="_blank"><img src="/img/projects/viima-logo-vector.svg" /></a>
 
 Want to see your project or company here: Add it [here](https://github.com/i18next/i18next.com/blob/master/pages/index.md) and send a pull request.

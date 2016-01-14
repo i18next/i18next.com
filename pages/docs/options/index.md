@@ -48,6 +48,8 @@ load              | 'all'               | language codes to lookup, given set la
 preload           | false               | array of languages to preload
 keySeparator      | '.'                 | char to separate keys
 nsSeparator       | ':'                 | char to split namespace from key
+pluralSeparator   | '\_'                 | char to split plural from key
+contextSeparator  | '\_'                 | char to split context from key
 saveMissing       | false               | calls save missing key function on backend if key not found
 saveMissingTo     | 'fallback'          | 'current' or 'all'
 missingKeyHandler | false               | `function(lng, ns, key, fallbackValue) { }` used for custom missing key handling

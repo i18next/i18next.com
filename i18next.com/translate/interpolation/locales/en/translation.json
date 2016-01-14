@@ -1,0 +1,7 @@
+{
+  "key": "{{what}} is {{how}}",
+  "keyEscaped": "no danger {{myVar}}",
+  "keyUnescaped": "dangerous {{- myVar}}",
+  "keyDeep": "i am {{author.what}}",
+  "keyDifferent": "__myVar__ is important"
+}

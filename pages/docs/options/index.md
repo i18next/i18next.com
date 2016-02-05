@@ -52,7 +52,7 @@ pluralSeparator   | '\_'                 | char to split plural from key
 contextSeparator  | '\_'                 | char to split context from key
 saveMissing       | false               | calls save missing key function on backend if key not found
 saveMissingTo     | 'fallback'          | 'current' or 'all'
-missingKeyHandler | false               | `function(lng, ns, key, fallbackValue) { }` used for custom missing key handling
+missingKeyHandler | false               | `function(lng, ns, key, fallbackValue) { }` used for custom  missing key handling (needs saveMissing set to true!)
 parseMissingKeyHandler | noop           | function(key) { // return value to display }
 appendNamespaceToMissingKey | false     | appends namespace to missing key
 postProcess       | false               | string or array of postProcessors to apply per default

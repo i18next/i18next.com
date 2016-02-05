@@ -35,6 +35,9 @@ i18next.init({
 });
 ```
 
+<a name="gettext"></a>
+#### [Gettext](#gettext)
+
 If you prefer __gettext__ style translations, where key is fallback value you should have a look at key based fallback [sample](/translate/keyBasedFallback/).
 
 

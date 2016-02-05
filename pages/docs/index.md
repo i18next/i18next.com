@@ -35,6 +35,7 @@ i18next.init({
 });
 ```
 
+If you prefer __gettext__ style translations, where key is fallback value you should have a look at key based fallback [sample](/translate/keyBasedFallback/).
 
 
 <a name="add-plugins"></a>

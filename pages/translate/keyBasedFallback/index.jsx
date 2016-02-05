@@ -18,7 +18,8 @@ module.exports = React.createClass({
       debug: true,
       lng: 'en',
       fallbackLng: false,
-      keySeparator: '##',
+      keySeparator: false,
+      nsSeparator: false,
       backend: {
         loadPath: 'locales/{{lng}}/{{ns}}.json'
       }
@@ -38,8 +39,15 @@ module.exports = React.createClass({
 While i18next prefers providing keys as short hierarchical structure. There are i18n formats that prefer having keys as
 the fallback (base language) for translations (eg. gettext).
 
-i18next is flexible enough to be used this way. So using [sprintf post processor](../../docs/ecosystem/#postprocessors) and
-transforming your files from *.mo*, *.po* to *.json* by using [i18next-gettext-converter](https://github.com/i18next/i18next-gettext-converter)
+i18next is flexible enough to be used this way, you should init i18next with:
+
+    i18next.init({
+      nsSeparator: false,
+      keySeparator: false
+    });
+
+Further using [sprintf post processor](../../docs/ecosystem/#postprocessors) enables sprintf.
+Transforming your files from *.mo*, *.po* to *.json* by using [i18next-gettext-converter](https://github.com/i18next/i18next-gettext-converter)
 you could integrate i18next in your existing translation pipeline.
 `
 

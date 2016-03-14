@@ -98,7 +98,9 @@ compatibilityJSON | Will allow to use JSON files in v1 format. Using old interpo
 
 - __support for older browsers__:
 
-  time to let them go - use shims when needed.
+  Beginning with v2 we target only modern browsers (Chrome, Firefox, ... and IE >= 10).
+
+  For IE9 you will need to add a es5 shim, see [fiddle](https://jsfiddle.net/c7k51vcw/6/)
 
 - __jquery__:
 

@@ -18,6 +18,7 @@ i18next provides:
 - [Nesting](/translate/nesting/), [Variable replacement](/translate/interpolation/)
 - Flexibility: prefer [keybased](/translate/) or [gettext](translate/keyBasedFallback/) style? No problem...
 - Extensibility: eg. [sprintf](/docs/ecosystem/#postprocessors)
+- Runs on modern browsers (Chrome, Firefox, ... and IE >= 10; IE9 with es5 shim)
 - ...
 
 </div>

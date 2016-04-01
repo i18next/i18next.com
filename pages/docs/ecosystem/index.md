@@ -13,9 +13,18 @@ order: 3
 framework         | description
 ----------------- | --------------------
 [react-i18next](https://github.com/i18next/react-i18next) | Higher order component and append i18next to context.
+[ng-i18next](https://github.com/i18next/ng-i18next) | AngularJS provider, directive and filter
 [nodejs express middleware](https://github.com/i18next/i18next-express-middleware) | Middleware to use i18next in express.js (nodejs).
 [jquery plugin](https://github.com/i18next/jquery-i18next) | Plugin to use i18next on jquery selectors.
-[webpack i18next-resource-store-loader](https://github.com/atroo/i18next-resource-store-loader) | This loader generates the resStore config needed for i18next to avoid loading language resources via extra HTTP requests. It generates this config given a directory.
+[aurelia-i18next](https://github.com/zewa666/aurelia-i18next) | An Aurelia-Wrapper for the i18next library
+[i18next-meteor](https://github.com/ckir/i18next-meteor) | i18next repackaged for Meteor
+[i18next-element](https://github.com/Polymer/i18next-element) | Polymer friendly interface to i18next
+[ember-cli-i18next](https://github.com/recipher/ember-cli-i18next) | Ember CLI addon to wrap i18next
+[i18next-ko](https://github.com/leMaik/i18next-ko) | KnockoutJS bindings for i18next
+[django-i18next](http://pythonhosted.org/django-i18next/) | Additions to Django’s i18n module.
+[i18next-ios](https://github.com/i18next/i18next-ios) | i18next for iOS
+[i18next-android](https://github.com/i18next/i18next-android) | i18next for android
+
 
 
 </div>
@@ -29,6 +38,10 @@ framework         | description
 util              | description
 ----------------- | --------------------
 [i18next-gettext-converter](https://github.com/i18next/i18next-gettext-converter) | Converts gettext .mo or .po to 18next json format and vice versa.
+[i18next-scanner](http://i18next.github.io/i18next-scanner/) | Scan your code, extract translation keys/values, and merge them into i18n resource files.
+[i18next-parser](https://github.com/i18next/i18next-parser) | A simple command line and gulp plugin that lets you parse your code and extract the translations keys in it.
+[grunt-i18next](https://github.com/i18next/grunt-i18next) | bundle language resource files for i18next
+[webpack i18next-resource-store-loader](https://github.com/atroo/i18next-resource-store-loader) | This loader generates the resStore config needed for i18next to avoid loading language resources via extra HTTP requests. It generates this config given a directory.
 
 </div>
 

@@ -15,6 +15,7 @@ framework         | description
 [react-i18next](https://github.com/i18next/react-i18next) | Higher order component and append i18next to context.
 [nodejs express middleware](https://github.com/i18next/i18next-express-middleware) | Middleware to use i18next in express.js (nodejs).
 [jquery plugin](https://github.com/i18next/jquery-i18next) | Plugin to use i18next on jquery selectors.
+[webpack i18next-resource-store-loader](https://github.com/atroo/i18next-resource-store-loader) | This loader generates the resStore config needed for i18next to avoid loading language resources via extra HTTP requests. It generates this config given a directory.
 
 
 </div>

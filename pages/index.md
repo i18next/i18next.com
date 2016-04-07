@@ -55,7 +55,7 @@ $ bower install i18next
 ### Projects / Companys using i18next
 
 <a href="https://enketo.org" class="projectlink" target="_blank"><img src="/img/projects/enketo.png" /></a>
-<a href="http://www.viima.com" class="projectlink" target="_blank"><img src="/img/projects/viima-logo-vector.svg" style="height: 50px;margin-top: 1px;margin-left:25px;position: absolute;" /></a>
-<a href="http://www.hubii.com" class="projectlink" target="_blank"><img src="/img/projects/Hubii_Logo_Horizontal_M.png" style="height: 50px;width:auto;margin-top: 1px;margin-left:25px;position: absolute;" /></a>
+<a href="http://www.viima.com" class="projectlink" target="_blank"><img src="/img/projects/viima-logo-vector.svg" style="height: 50px;top: -7px;margin-left:25px;position: relative;" /></a>
+<a href="http://www.hubii.com" class="projectlink" target="_blank"><img src="/img/projects/Hubii_Logo_Horizontal_M.png" style="height: 50px;width:auto;margin-top: 1px;margin-left:25px;position: relative;" /></a>
 
 Want to see your project or company here: Add it [here](https://github.com/i18next/i18next.com/blob/master/pages/index.md) and send a pull request.

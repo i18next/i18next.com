@@ -36,6 +36,7 @@ interpolation     | see interpolation options below
 option            | default             | description
 ----------------- | --------------------| -----------------
 debug             | false               | logs out more info (console)
+initImmediate     | true                | triggers resource loading in init function inside setTimeout (default async behaviour)
 resources         | undefined           | resources to initialize with
 lng               | undefined           | language to set (disables user language detection)
 fallbackLng       | 'dev'               | language to lookup key if not found on set language

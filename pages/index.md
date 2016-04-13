@@ -35,7 +35,14 @@ For more information visit:
 </div>
 </div>
 
-Our focus is providing the core for building a booming ecosystem. Independent of the building blocks you choose, be it react, angular or even good old jquery - proper translation capabilities are just [one step away](/docs/ecosystem/#frameworks).
+<div style="text-align: center; background: #fff; padding: 20px; margin-bottom: 30px">
+  <a href="/docs/ecosystem/#frameworks">
+    <img style="max-width: 600px;" src="/img/frameworks.png" />
+  </a>
+  <p>Our focus is providing the core for building a booming ecosystem. Independent of the building blocks you choose, be it react, angular or even good old jquery - proper translation capabilities are just <a href="/docs/ecosystem/#frameworks">one step away</a>.</p>
+</div>
+
+
 
 
 ### download

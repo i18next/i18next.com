@@ -25,6 +25,7 @@ framework         | description
 [django-i18next](http://pythonhosted.org/django-i18next/) | Additions to Django’s i18n module.
 [i18next-ios](https://github.com/i18next/i18next-ios) | i18next for iOS
 [i18next-android](https://github.com/i18next/i18next-android) | i18next for android
+[kwc-i18next](https://github.com/successk/kwc-i18next) | Web component interfacing i18next
 
 
 

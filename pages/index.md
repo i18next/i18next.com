@@ -49,7 +49,7 @@ For more information visit:
 
 Please read the [changelog](https://github.com/i18next/i18next/blob/master/CHANGELOG.md#300)
 
-There is one breaking change regarding suffixing plurals in cases a language has multiple plural forms. Eg. arabic suffixes are no 0, 1, 2, 3, 4, 5 instead of 0, 1, 2, 3, 11, 100. This change streamlines the suffix with the one used in gettext.
+There is one breaking change regarding suffixing plurals in cases a language has multiple plural forms. Eg. arabic suffixes are now 0, 1, 2, 3, 4, 5 instead of 0, 1, 2, 3, 11, 100. This change streamlines the suffix with the one used in gettext.
 To enforce old behaviour you can enable `compatibilityJSON = 'v2'` on i18next init call.
 
 -------

@@ -42,9 +42,9 @@ module.exports = React.createClass({
 
     const md = `
 For languages with more then just singular and plural can be defined like used in gettext based translations
-by appending the number of plural form:
+by appending the index of plural form:
 
-Numbers can be looked up [here](http://localization-guide.readthedocs.io/en/latest/l10n/pluralforms.html).
+Numbers can be looked up [here](/docs/plurals/).
 `
 
     return (

@@ -3,6 +3,23 @@ title: Migration Guide
 order: 10
 ---
 
+<a name="v2-x-x--v3-0-0"></a>
+### [v2.x.x to v3.0.0](#v2-x-x--v3-0-0)
+
+There is one breaking change regarding suffixing plurals in cases a language has multiple plural forms. Eg. arabic suffixes are now 0, 1, 2, 3, 4, 5 instead of 0, 1, 2, 3, 11, 100.
+
+This change streamlines the suffix with the one used in gettext.
+
+To enforce old behaviour you can enable `compatibilityJSON = 'v2'` on i18next init call.
+
+```js
+import i18next from 'i18next';
+
+i18next.init({
+  compatibilityJSON: 'v2'
+}, (err, t) => { /* resources are loaded */ });
+```
+
 <a name="v1-11-x--v2-0-0"></a>
 ### [v1.11.x to v2.0.0](#v1-11-x--v2-0-0)
 

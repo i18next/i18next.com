@@ -1,5 +1,5 @@
 ---
-title: JSON Versions
+title: JSON Structure
 order: 6
 ---
 

@@ -17,7 +17,7 @@ framework         | description
 [ng2-i18next](https://github.com/actimeo/ng2-i18next) | Angular2 service and directive
 [nodejs express middleware](https://github.com/i18next/i18next-express-middleware) | Middleware to use i18next in express.js (nodejs).
 [jquery plugin](https://github.com/i18next/jquery-i18next) | Plugin to use i18next on jquery selectors.
-[aurelia-i18next](https://github.com/zewa666/aurelia-i18next) | An Aurelia-Wrapper for the i18next library
+[aurelia-i18next](https://github.com/aurelia/i18n) | An Aurelia-Wrapper for the i18next library
 [i18next-meteor](https://github.com/ckir/i18next-meteor) | i18next repackaged for Meteor
 [i18next-element](https://github.com/Polymer/i18next-element) | Polymer friendly interface to i18next
 [ember-cli-i18next](https://github.com/recipher/ember-cli-i18next) | Ember CLI addon to wrap i18next

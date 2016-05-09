@@ -5,7 +5,7 @@
   "main": "n/a",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "gatsby serve",
+    "start": "gatsby develop",
     "build": "gatsby build && gulp copy",
     "deploy": "gatsby build && gulp copy && git-directory-deploy --directory public --branch gh-pages",
     "_buildWithoutDomain": "GATSBY_ENV=gh-pages gatsby build && gulp copy",
@@ -29,14 +29,15 @@
     "typography": "^0.6.2",
     "underscore.string": "^3.2.2",
     "highlight.js": "8.9.1",
-    "i18next": ">=2.1.0",
-    "i18next-intervalplural-postprocessor": ">=0.0.8",
-    "i18next-xhr-backend": ">=0.0.4",
+    "i18next": "3.0.0",
+    "i18next-intervalplural-postprocessor": "0.2.3",
+    "i18next-xhr-backend": "0.5.4",
     "react-highlight": "0.6.1",
     "react-remarkable": "1.1.1"
   },
   "devDependencies": {
     "git-directory-deploy": "1.3.0",
-    "gulp": "3.9.0"
+    "gulp": "3.9.0",
+    "gatsby": "0.7.6"
   }
 }

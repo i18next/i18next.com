@@ -44,7 +44,7 @@ module.exports = React.createClass({
 For languages with more then just singular and plural can be defined like used in gettext based translations
 by appending the number of plural form:
 
-Numbers can be looked up [here](https://github.com/i18next/i18next/blob/master/src/PluralResolver.js).
+Numbers can be looked up [here](http://localization-guide.readthedocs.io/en/latest/l10n/pluralforms.html).
 `
 
     return (

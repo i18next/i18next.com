@@ -4,7 +4,6 @@ title: "i18next: internationalization framework"
 
 i18next is a very popular internationalization framework for browser or any other javascript environment (eg. node.js).
 
-The current v2 release is a big milestone in keeping continuity for your translation projects by keeping a stable, modern API.
 
 <div class="row">
 <div class="col-md-6 col-xs-12">
@@ -32,6 +31,7 @@ For more information visit:
 - [API](/docs/api/)
 - [Migration Guide from v1.11.x](/docs/migration/)
 - [Old v1.11.x Documentation](http://i18next.github.io/i18next/)
+- [Changelog](https://github.com/i18next/i18next/blob/master/CHANGELOG.md)
 
 </div>
 </div>
@@ -43,7 +43,16 @@ For more information visit:
   <p>Our focus is providing the core for building a booming ecosystem. Independent of the building blocks you choose, be it react, angular or even good old jquery - proper translation capabilities are just <a href="/docs/ecosystem/#frameworks">one step away</a>.</p>
 </div>
 
+------
 
+**Important note to v3.0.0**
+
+Please read the [changelog](https://github.com/i18next/i18next/blob/master/CHANGELOG.md#300)
+
+There is one breaking change regarding suffixing plurals in cases a language has multiple plural forms. Eg. arabic suffixes are no 0, 1, 2, 3, 4, 5 instead of 0, 1, 2, 3, 11, 100. This change streamlines the suffix with the one used in gettext.
+To enforce old behaviour you can enable `compatibilityJSON = 'v2'` on i18next init call.
+
+-------
 
 
 ### download

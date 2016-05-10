@@ -35,6 +35,8 @@ i18next.init({
 });
 ```
 
+Have a look on our [translation features](/translate/) for more detail on how to translate your app.
+
 <a name="gettext"></a>
 #### [Gettext](#gettext)
 

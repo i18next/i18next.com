@@ -59,9 +59,18 @@ module.exports = React.createClass({
     const md = `
 The lookup order for keys is always:
 
-1) \`en-US\` language + country
+1) \`en-US\` language + region
 2) \`en\` language only
 3) \`fallback\` thats defined in options.fallbackLng (string or array of fallback language)
+
+You can change this behaviour by:
+
+- setting a whitelist on init \`whitelist: ['en', 'fr']\`
+- setting \`fallbackLng: false\` (encouraged only if you set the language by your user information without detection)
+- setting load options on init
+  - \`load: 'all'\` will load _en-US, en, fallback_ for _en-US_
+  - \`load: 'currentOnly'\` will load _en-US_ for _en-US_
+  - \`load: 'languageOnly'\` will load _en_ for _en-US_
 `
 
     return (

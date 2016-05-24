@@ -26,6 +26,7 @@ framework         | description
 [i18next-ios](https://github.com/i18next/i18next-ios) | i18next for iOS
 [i18next-android](https://github.com/i18next/i18next-android) | i18next for android
 [kwc-i18next](https://github.com/successk/kwc-i18next) | Web component interfacing i18next
+[i18nextify](https://github.com/i18next/i18nextify) | one liner script to enable i18next one any site
 
 
 
@@ -47,6 +48,17 @@ util              | description
 
 </div>
 
+<a name="services"></a>
+### [services](#services)
+
+<div class="optionstable">
+
+name              | description
+----------------- | --------------------
+[locize](http://locize.com) | localization as a service. Solves your localization process using i18next.
+
+</div>
+
 <a name="plugins"></a>
 ### [plugins](#plugins)
 
@@ -63,6 +75,8 @@ backend           | description
 [nodejs remote](https://github.com/i18next/i18next-node-remote-backend) | node.js backend layer for i18next using request module to load resources from another server
 [nodejs mongodb](https://github.com/gian788/i18next-node-mongodb-backend) | i18next node.js backend layer for i18next using mongodb
 [nodejs couchbase](https://github.com/kvaillant/i18next.couchbase) | i18next node.js backend layer for i18next using couchbase
+[locize backend](https://github.com/locize/i18next-locize-backend) | backend layer for [locize.com - localization as a service](http://locize.com)
+[locize nodejs backend](https://github.com/locize/i18next-node-locize-backend) | backend layer for [locize.com - localization as a service](http://locize.com)
 
 </div>
 

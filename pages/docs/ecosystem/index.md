@@ -29,6 +29,17 @@ framework         | description
 [i18nextify](https://github.com/i18next/i18nextify) | one liner script to enable i18next one any site
 
 
+</div>
+
+
+<a name="services"></a>
+### [services](#services)
+
+<div class="optionstable">
+
+name              | description
+----------------- | --------------------
+[locize](http://locize.com) | localization as a service. Solves your localization process using i18next.
 
 </div>
 
@@ -48,16 +59,6 @@ util              | description
 
 </div>
 
-<a name="services"></a>
-### [services](#services)
-
-<div class="optionstable">
-
-name              | description
------------------ | --------------------
-[locize](http://locize.com) | localization as a service. Solves your localization process using i18next.
-
-</div>
 
 <a name="plugins"></a>
 ### [plugins](#plugins)

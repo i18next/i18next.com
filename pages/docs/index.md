@@ -37,6 +37,11 @@ i18next.init({
 
 Have a look on our [translation features](/translate/) for more detail on how to translate your app.
 
+<a name="locize"></a>
+#### [Get me translated - please](#locize)
+
+You don't want to struggle with building your own backend services and want to have your translation process solved check out our localization as a service provided by our [locize](http://locize.com) platform
+
 <a name="gettext"></a>
 #### [Gettext](#gettext)
 

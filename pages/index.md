@@ -4,6 +4,15 @@ title: "i18next: internationalization framework"
 
 i18next is a very popular internationalization framework for browser or any other javascript environment (eg. node.js).
 
+<hr />
+
+**News**
+
+Having done a big rewrite of i18next in spring we are proud to announce the next big step to get your webproject translated with less effort. We just released [locize](http://locize.com) a translation management system built around the i18next ecosystem.
+
+With using [locize](http://locize.com) you directly support the future of i18next.
+
+<hr />
 
 <div class="row">
 <div class="col-md-6 col-xs-12">
@@ -18,6 +27,7 @@ i18next provides:
 - Flexibility: prefer [keybased](/translate/) or [gettext](translate/keyBasedFallback/) style? No problem...
 - Extensibility: eg. [sprintf](/docs/ecosystem/#postprocessors)
 - Runs on modern browsers (Chrome, Firefox, ... and IE >= 10; IE9 with es5 shim)
+- Translation Management / Localization as a service provided by our [locize](http://locize.com) platform
 - ...
 
 </div>
@@ -32,6 +42,10 @@ For more information visit:
 - [Migration Guide from v1.11.x](/docs/migration/)
 - [Old v1.11.x Documentation](http://i18next.github.io/i18next/)
 - [Changelog](https://github.com/i18next/i18next/blob/master/CHANGELOG.md)
+
+Latest Articles:
+
+- [Translate my website — please!](https://medium.com/@jamuhl/translate-my-website-please-732ddb622cba#.f0sai4bfb).
 
 </div>
 </div>

@@ -1,8 +1,8 @@
 ---
-title: "i18next: internationalization framework"
+title: "i18next: internationalization ecosystem"
 ---
 
-i18next is a very popular internationalization framework for browser or any other javascript environment (eg. node.js).
+i18next is a very popular internationalization library for browser or any other javascript environment (eg. node.js).
 
 <hr />
 

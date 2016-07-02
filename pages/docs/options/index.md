@@ -44,6 +44,7 @@ ns                | 'translation'       | string or array of namespaces
 defaultNS         | 'translation'       | default namespace used if not passed to translation function
 fallbackNS        | false               | string or array of namespaces to lookup key if not found
 whitelist         | false               | array of allowed languages
+nonExplicitWhitelist | false            | if true will pass eg. en-US if finding en in whitelist
 lowerCaseLng      | false               | language will be lowercased eg. en-US --> en-us
 load              | 'all'               | language codes to lookup, given set language is 'en-US': `'all' --> ['en-US', 'en', 'dev']`, `'currentOnly' --> 'en-US'`, `'languageOnly' --> 'en'`
 preload           | false               | array of languages to preload

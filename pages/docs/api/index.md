@@ -112,6 +112,14 @@ i18next.loadLanguages(['de', 'fr'], (err, t) => { /* resources have been loaded 
 
 Loads resources on given state. Gets called internal on init, changeLanguage.
 
+
+<a name="reload-resources"></a>
+### [reloadResources](#reload-resources) `i18next.reloadResources()`
+
+Reloads resources on given state. Optionally you can pass an array of languages and namespaces as params if you don't want to relaod all.
+
+reloadResources(lngs, ns)
+
 <a name="set-default-namespace"></a>
 ### [setDefaultNamespace](#set-default-namespace) `i18next.setDefaultNamespace(ns)`
 
@@ -121,6 +129,7 @@ Changes the default namespace.
 ### [dir](#dir) `i18next.dir(lng)`
 
 Returns `rtl` or `ltr` depending on languages read direction.
+
 
 ----------
 

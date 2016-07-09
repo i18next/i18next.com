@@ -1,16 +1,16 @@
-# introduction
+# Introduction
 
 This is the code running the website for i18next.com.
 
-# contribution
+# Contribution
 
 Contribution is very welcome.
 
-1) Fork the project
-2) Do your changes on files in `/pages` (see below how to run the local hot reload server)
-3) Fill a pull request
+1. Fork the project
+1. Do your changes on files in `/pages` (see below how to run the local hot reload server)
+1. Fill a pull request
 
-### serve hot reload
+### Serve hot reload
 
 ```
 # preconditions (currently gatsby v0.7.6)
@@ -23,6 +23,6 @@ $ npm install
 $ gatsby develop
 ```
 
-### deploy
+### Deploy
 
 `$ npm run deploy`

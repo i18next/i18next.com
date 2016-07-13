@@ -186,7 +186,12 @@ export default React.createClass({
             <h6>Init options</h6>
             <div className='code-10'>
               <Highlight className='json'>
-                {JSON.stringify(this.state.origOptions, null, 2)}
+                {JSON.stringify(this.state.origOptions, function(key, val) {
+                  if (typeof val === 'function') {
+                    return val + ''; // implicitly `toString` it
+                  }
+                  return val;
+                }, 2)}
               </Highlight>
             </div>
           </div>

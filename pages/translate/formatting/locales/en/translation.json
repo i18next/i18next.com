@@ -1,0 +1,4 @@
+{
+  "key": "{{text, uppercase}} just uppercased",
+  "key2": "{{date, time}} is current time"
+}

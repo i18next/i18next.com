@@ -78,9 +78,11 @@ cache             | undefined           | options for cache layer -- see cache d
 
 option            | default             | description
 ----------------- | --------------------| -----------------
+format            | noop function       | format function function format(value, format, lng) {}
 escapeValue       | true                | escapes passed in values to avoid xss injection
 prefix            | '{{'                | prefix for interpolation
 suffix            | '}}'                | suffix for interpolation
+formatSeparator   | ','                 | used to separate format from interpolation value
 prefixEscaped     | undefined           | escaped prefix for interpolation (regexSafe)
 suffixEscaped     | undefined           | escaped suffix for interpolation (regexSafe)
 unescapeSuffix    | undefined           | suffix to unescaped mode

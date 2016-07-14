@@ -15,6 +15,7 @@ order: 6
   "keyNesting": "reuse $t{keyDeep.inner}",
   "keyInterpolate": "replace this {{value}}",
   "keyInterpolateUnescaped": "replace this {{- value}}",
+  "keyInterpolateWithFormatting": "replace this {{value, format}}",
   "keyContext_male": "the male variant",
   "keyContext_female": "the female variant",
   "keyPluralSimple": "the singular",

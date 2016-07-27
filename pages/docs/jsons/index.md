@@ -12,7 +12,7 @@ order: 6
   "keyDeep": {
     "inner": "value"
   },
-  "keyNesting": "reuse $t{keyDeep.inner}",
+  "keyNesting": "reuse $t(keyDeep.inner)",
   "keyInterpolate": "replace this {{value}}",
   "keyInterpolateUnescaped": "replace this {{- value}}",
   "keyInterpolateWithFormatting": "replace this {{value, format}}",
@@ -52,7 +52,7 @@ formats:
   "keyDeep": {
     "inner": "value"
   },
-  "keyNesting": "reuse $t{keyDeep.inner}",
+  "keyNesting": "reuse $t(keyDeep.inner)",
   "keyInterpolate": "replace this {{value}}",
   "keyInterpolateUnescaped": "replace this {{- value}}",
   "keyContext_male": "the male variant",
@@ -89,7 +89,7 @@ formats:
   "keyDeep": {
     "inner": "value"
   },
-  "keyNesting": "reuse $t{keyDeep.inner}",
+  "keyNesting": "reuse $t(keyDeep.inner)",
   "keyInterpolate": "replace this __value__",
   "keyInterpolateUnescaped": "replace this __valueHTML__",
   "keyContext_male": "the male variant",

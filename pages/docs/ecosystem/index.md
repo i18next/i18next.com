@@ -15,6 +15,7 @@ framework         | description
 [react-i18next](https://github.com/i18next/react-i18next) | Higher order component and append i18next to context.
 [ng-i18next](https://github.com/i18next/ng-i18next) | AngularJS provider, directive and filter
 [ng2-i18next](https://github.com/actimeo/ng2-i18next) | Angular2 service and directive
+[vue-i18next](https://github.com/rse/vue-i18next) | Vue plugin for integrating i18next
 [nodejs express middleware](https://github.com/i18next/i18next-express-middleware) | Middleware to use i18next in express.js (nodejs).
 [jquery plugin](https://github.com/i18next/jquery-i18next) | Plugin to use i18next on jquery selectors.
 [aurelia-i18next](https://github.com/aurelia/i18n) | An Aurelia-Wrapper for the i18next library

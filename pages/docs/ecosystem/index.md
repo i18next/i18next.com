@@ -107,6 +107,7 @@ language detector | description
 ----------------- | --------------------
 [browser](https://github.com/i18next/i18next-browser-languageDetector) | language detector used in browser environment for i18next
 [nodejs express](https://github.com/i18next/i18next-express-middleware) | language detector for express.js (nodejs).
+[react native](https://github.com/DylanVann/i18next-react-native-language-detector) | language detector for React Native.
 
 </div>
 

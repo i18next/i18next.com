@@ -13,11 +13,12 @@ order: 3
 framework         | description
 ----------------- | --------------------
 [react-i18next](https://github.com/i18next/react-i18next) | Higher order component and append i18next to context.
-[ng-i18next](https://github.com/i18next/ng-i18next) | AngularJS provider, directive and filter
+[ng-i18next](https://github.com/i18next/ng-i18next) | Angular1/2 provider, directive and filter
 [ng2-i18next](https://github.com/actimeo/ng2-i18next) | Angular2 service and directive
 [vue-i18next](https://github.com/rse/vue-i18next) | Vue plugin for integrating i18next
 [nodejs express middleware](https://github.com/i18next/i18next-express-middleware) | Middleware to use i18next in express.js (nodejs).
 [jquery plugin](https://github.com/i18next/jquery-i18next) | Plugin to use i18next on jquery selectors.
+[loc-i18next](https://github.com/mthh/loc-i18next) | Plugin to use same API as jquery-i18next but with html5 selectors
 [aurelia-i18next](https://github.com/aurelia/i18n) | An Aurelia-Wrapper for the i18next library
 [i18next-meteor](https://github.com/ckir/i18next-meteor) | i18next repackaged for Meteor
 [i18next-element](https://github.com/Polymer/i18next-element) | Polymer friendly interface to i18next
@@ -57,6 +58,7 @@ util              | description
 [i18next-parser](https://github.com/i18next/i18next-parser) | A simple command line and gulp plugin that lets you parse your code and extract the translations keys in it.
 [grunt-i18next](https://github.com/i18next/grunt-i18next) | bundle language resource files for i18next
 [webpack i18next-resource-store-loader](https://github.com/atroo/i18next-resource-store-loader) | This loader generates the resStore config needed for i18next to avoid loading language resources via extra HTTP requests. It generates this config given a directory.
+[i18next-json-sync](https://github.com/jwbay/i18next-json-sync) | Keep i18next JSON resource files in sync with source language file
 
 </div>
 
@@ -109,6 +111,7 @@ language detector | description
 [browser](https://github.com/i18next/i18next-browser-languageDetector) | language detector used in browser environment for i18next
 [nodejs express](https://github.com/i18next/i18next-express-middleware) | language detector for express.js (nodejs).
 [react native](https://github.com/DylanVann/i18next-react-native-language-detector) | language detector for React Native.
+[electron](https://github.com/neruchev/i18next-electron-language-detector) | language detector for electron apps.
 
 </div>
 

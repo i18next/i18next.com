@@ -28,10 +28,12 @@ function PluralItem(props) {
       {
         props.rule.numbers.length === 2 ? 'key, key_plural' : props.rule.numbers.reduce(function(red, n, i) {
           if (version === 'v3') {
+            if (props.rule.numbers.length === 1) return 'key';
             var res = red + 'key_' + i;
             if (i < props.rule.numbers.length - 1) res = res + ', ';
             return res;
-          } else if (version === 'v2'){
+          } else if (version === 'v2') {
+            if (props.rule.numbers.length === 1) return 'key';
             var res = red + 'key_' + props.rule.numbers[i];
             if (i < props.rule.numbers.length - 1) res = res + ', ';
             return res;

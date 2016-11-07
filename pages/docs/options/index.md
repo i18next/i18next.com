@@ -16,7 +16,7 @@ context           | used for contexts (eg. male|female)
 replace           | object with vars for interpolation - optional as you can put them directly in options
 lng               | language to use
 lngs              | languages to use
-fallbackLng       | language to lookup key if not found on set language
+fallbackLng       | language to lookup key if not found on set language, can be a string (`en`), an array (`['fe', 'en']`) or object defining fallbacks and a default ( ``{ 'de-CH': ['fr', 'it'], 'zh-HANT': ['zh-HANS', 'en'],  'default': ['en'] }`` )
 ns                | string or array of namespaces
 keySeparator      | char to separate keys
 nsSeparator       | char to split namespace from key
@@ -39,7 +39,7 @@ debug             | false               | logs out more info (console)
 initImmediate     | true                | triggers resource loading in init function inside setTimeout (default async behaviour)
 resources         | undefined           | resources to initialize with
 lng               | undefined           | language to set (disables user language detection)
-fallbackLng       | 'dev'               | language to lookup key if not found on set language
+fallbackLng       | 'dev'               | language to lookup key if not found on set language, can be a string (`en`), an array (`['fe', 'en']`) or object defining fallbacks and a default ( ``{ 'de-CH': ['fr', 'it'], 'zh-HANT': ['zh-HANS', 'en'],  'default': ['en'] }`` )
 ns                | 'translation'       | string or array of namespaces
 defaultNS         | 'translation'       | default namespace used if not passed to translation function
 fallbackNS        | false               | string or array of namespaces to lookup key if not found

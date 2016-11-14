@@ -17,3 +17,9 @@ node_modules
 node_modules/**/*
 coverage/**/*
 public/**/*
+
+# JetBrains
+.idea/
+
+# OS X
+**/.DS_Store

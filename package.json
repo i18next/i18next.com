@@ -14,6 +14,7 @@
   "keywords": [
     "i18next website"
   ],
+  "repository":"https://github.com/i18next/i18next.com.git",
   "author": "Jan Mühlemann <jan.muehlemann@gmail.com>",
   "license": "MIT",
   "dependencies": {

@@ -36,7 +36,7 @@ module.exports = React.createClass({
         run: [
           { fc: 't', args: ['keyEscaped', { myVar: '<img />'}]},
           { fc: 't', args: ['keyUnescaped', { myVar: '<img />'}]},
-          { fc: 't', args: ['keyEscaped', { myVar: '<img />', interpolation: {escape: false}}], comment: '(obviously danger now)'},
+          { fc: 't', args: ['keyEscaped', { myVar: '<img />', interpolation: {escapeValue: false}}], comment: '(obviously danger now)'},
         ]
       },
       {

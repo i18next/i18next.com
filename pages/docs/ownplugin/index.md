@@ -10,7 +10,7 @@ i18next comes with a lot of modules to enhance the features available. There are
 - detect user language by querystring, navigator, cookie, ...
 - post processors to further manipulate values, eg. to add sprintf support
 
-[Available plugins](ecosystem/#plugins)
+[Available plugins](../ecosystem/#plugins)
 
 The plugins need to support following APIs:
 

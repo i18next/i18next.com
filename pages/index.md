@@ -4,16 +4,6 @@ title: "i18next: internationalization ecosystem"
 
 i18next is a very popular internationalization library for browser or any other javascript environment (eg. node.js).
 
-<hr />
-
-**News**
-
-Having done a big rewrite of i18next in spring we are proud to announce the next big step to get your webproject translated with less effort. We just released [locize](http://locize.com) a translation management system built around the i18next ecosystem.
-
-With using [locize](http://locize.com) you directly support the future of i18next.
-
-<hr />
-
 <div class="row">
 <div class="col-md-6 col-xs-12">
 
@@ -50,6 +40,23 @@ Latest Articles:
 </div>
 </div>
 
+<div style="background: #fff; border: solid 1px #ccc; padding: 10px; margin-bottom: 30px">
+
+**NEWS: Localization as a service**
+
+Having done a big rewrite of i18next in spring we are proud to announce the next big step to get your webproject translated with less effort. We just released [locize](http://locize.com) a translation management system built around the i18next ecosystem.
+
+<div style="text-align: center; background: #fff; padding: 20px; margin-bottom: 10px">
+  <a href="http://locize.com" target="_blank">
+    <img style="max-width: 600px;" src="/img/locize_recap_big_low.gif" />
+  </a>
+</div>
+
+With using [locize](http://locize.com) you directly support the future of i18next.
+
+</div>
+
+
 <div style="text-align: center; background: #fff; padding: 20px; margin-bottom: 30px">
   <a href="/docs/ecosystem/#frameworks">
     <img style="max-width: 600px;" src="/img/frameworks.png" />
@@ -57,7 +64,7 @@ Latest Articles:
   <p>Our focus is providing the core for building a booming ecosystem. Independent of the building blocks you choose, be it react, angular or even good old jquery - proper translation capabilities are just <a href="/docs/ecosystem/#frameworks">one step away</a>.</p>
 </div>
 
-------
+<!-- ------
 
 **Important note to v3.0.0**
 
@@ -66,7 +73,7 @@ Please read the [changelog](https://github.com/i18next/i18next/blob/master/CHANG
 There is one breaking change regarding suffixing plurals in cases a language has multiple plural forms. Eg. arabic suffixes are now 0, 1, 2, 3, 4, 5 instead of 0, 1, 2, 3, 11, 100. This change streamlines the suffix with the one used in gettext.
 To enforce old behaviour you can enable `compatibilityJSON = 'v2'` on i18next init call.
 
--------
+------- -->
 
 
 ### download
@@ -81,11 +88,11 @@ $ npm install i18next
 # bower
 $ bower install i18next
 ```
-
+<!-- 
 ### Projects / Companys using i18next
 
 <a href="https://enketo.org" class="projectlink" target="_blank"><img src="/img/projects/enketo.png" /></a>
 <a href="http://www.viima.com" class="projectlink" target="_blank"><img src="/img/projects/viima-logo-vector.svg" style="height: 50px;top: -7px;margin-left:25px;position: relative;" /></a>
 <a href="http://www.hubii.com" class="projectlink" target="_blank"><img src="/img/projects/Hubii_Logo_Horizontal_M.png" style="height: 50px;width:auto;margin-top: 1px;margin-left:25px;position: relative;" /></a>
 
-Want to see your project or company here: Add it [here](https://github.com/i18next/i18next.com/blob/master/pages/index.md) and send a pull request.
+Want to see your project or company here: Add it [here](https://github.com/i18next/i18next.com/blob/master/pages/index.md) and send a pull request. -->

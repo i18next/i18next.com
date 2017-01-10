@@ -3,6 +3,14 @@ title: Migration Guide
 order: 10
 ---
 
+<a name="v3-x-x--v4-0-0"></a>
+### [v3.x.x to v4.0.0](#v3-x-x--v4-0-0)
+
+There is only a small change for webpack2 builds which now targets es build with import/export in place to enable treeshaking (module entrypoint in package.json).
+
+Nothing breaking for non webpack2 users.
+
+
 <a name="v2-x-x--v3-0-0"></a>
 ### [v2.x.x to v3.0.0](#v2-x-x--v3-0-0)
 

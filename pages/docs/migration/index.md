@@ -3,6 +3,13 @@ title: Migration Guide
 order: 10
 ---
 
+<a name="v4-x-x--v5-0-0"></a>
+### [v4.x.x to v5.0.0](#v4-x-x--v5-0-0)
+
+Nested keys should not be escaped [#854](https://github.com/i18next/i18next/issues/854)
+
+i18next.cloneInstance() calls now init() (before it depended on having called that function with a callback) [#860](https://github.com/i18next/i18next/pull/860)
+
 <a name="v3-x-x--v4-0-0"></a>
 ### [v3.x.x to v4.0.0](#v3-x-x--v4-0-0)
 

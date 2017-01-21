@@ -57,6 +57,7 @@ saveMissingTo     | 'fallback'          | 'current' or 'all'
 missingKeyHandler | false               | `function(lng, ns, key, fallbackValue) { }` used for custom  missing key handling (needs saveMissing set to true!)
 parseMissingKeyHandler | noop           | function(key) { // return value to display }
 appendNamespaceToMissingKey | false     | appends namespace to missing key
+appendNamespaceToCIMode | false 		| prefixes the namespace to the string when using `cimode` 
 postProcess       | false               | string or array of postProcessors to apply per default
 returnNull        | true                | allows null values as valid translation
 returnEmptyString | true                | allows empty string as valid translation

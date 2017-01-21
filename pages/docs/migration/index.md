@@ -3,6 +3,13 @@ title: Migration Guide
 order: 10
 ---
 
+<a name="v5-x-x--v6-0-0"></a>
+### [v5.x.x to v6.0.0](#v5-x-x--v6-0-0)
+
+Return namespace in cimode with appendNamespaceToCIMode option (default now will only return key without namespace - independent of call to t function) [#863](https://github.com/i18next/i18next/issues/863)
+
+This change might break your e2e tests if your depending on the cimode (the returned value can now be set to return always only key or ns+key)
+
 <a name="v4-x-x--v5-0-0"></a>
 ### [v4.x.x to v5.0.0](#v4-x-x--v5-0-0)
 

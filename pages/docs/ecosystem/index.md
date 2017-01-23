@@ -74,6 +74,7 @@ util              | description
 backend           | description
 ----------------- | --------------------
 [xhr backend](https://github.com/i18next/i18next-xhr-backend) | backend layer for i18next using browsers xhr
+[fetch backend](https://github.com/perrin4869/i18next-fetch-backend) | backend layer for i18next using browsers fetch
 [nodejs filesystem](https://github.com/i18next/i18next-node-fs-backend) | node.js backend layer for i18next using fs module to load resources from filesystem
 [nodejs filesystem (sync)](https://github.com/arve0/i18next-sync-fs-backend) | node.js backend layer for i18next using fs module to load resources synchronous from filesystem
 [nodejs remote](https://github.com/i18next/i18next-node-remote-backend) | node.js backend layer for i18next using request module to load resources from another server

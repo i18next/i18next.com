@@ -3,6 +3,25 @@ title: Migration Guide
 order: 10
 ---
 
+<a name="v6-x-x--v7-0-0"></a>
+### [v6.x.x to v7.0.0](#v6-x-x--v7-0-0)
+
+We used to resolve nb-NO, nn-NO to no as language part mainly because there was no way to proper define per local fallbacks. With v7.0.0 we removed that to enable default behaviour also for norwegian language. To get back the old behaviour you can define multiple fallbacks like:
+
+```
+fallbackLng: {
+  'nb': ['no', 'en'],
+  'nn': ['no', 'en'],
+  'default': ['en']
+}
+```
+
+Additional starting from 7.0.0 you could use named exports:
+
+```
+import { init, t } from 'i18next';
+```
+
 <a name="v5-x-x--v6-0-0"></a>
 ### [v5.x.x to v6.0.0](#v5-x-x--v6-0-0)
 

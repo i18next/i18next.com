@@ -24,6 +24,7 @@ framework         | description
 [i18next-element](https://github.com/Polymer/i18next-element) | Polymer friendly interface to i18next
 [ember-cli-i18next](https://github.com/recipher/ember-cli-i18next) | Ember CLI addon to wrap i18next
 [i18next-ko](https://github.com/leMaik/i18next-ko) | KnockoutJS bindings for i18next
+[phaser-i18next](https://github.com/orange-games/phaser-i18next) | Phaser plugin for translations using i18next
 [django-i18next](http://pythonhosted.org/django-i18next/) | Additions to Django’s i18n module.
 [i18next-ios](https://github.com/i18next/i18next-ios) | i18next for iOS
 [i18next-android](https://github.com/i18next/i18next-android) | i18next for android

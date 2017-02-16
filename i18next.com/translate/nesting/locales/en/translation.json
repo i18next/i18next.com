@@ -1,0 +1,7 @@
+{
+  "nesting3": "3",
+  "girlsAndBoys": "$t(girls, {\"count\": {{girls}} }) and {{count__ boy",
+  "girlsAndBoys_plural": "$t(girls, {\"count\": {{girls}} }) and {{count}} boys",
+  "girls": "{{count}} girl",
+  "girls_plural": "{{count}} girls"
+}

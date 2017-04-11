@@ -52,12 +52,13 @@ keySeparator      | '.'                 | char to separate keys
 nsSeparator       | ':'                 | char to split namespace from key
 pluralSeparator   | '\_'                 | char to split plural from key
 contextSeparator  | '\_'                 | char to split context from key
+simplifyPluralSuffix | true             | will use 'plural' as suffix for languages only having 1 plural form, setting it to false will suffix all with numbers
 saveMissing       | false               | calls save missing key function on backend if key not found
 saveMissingTo     | 'fallback'          | 'current' or 'all'
 missingKeyHandler | false               | `function(lng, ns, key, fallbackValue) { }` used for custom  missing key handling (needs saveMissing set to true!)
 parseMissingKeyHandler | noop           | function(key) { // return value to display }
 appendNamespaceToMissingKey | false     | appends namespace to missing key
-appendNamespaceToCIMode | false 		| prefixes the namespace to the string when using `cimode` 
+appendNamespaceToCIMode | false 		| prefixes the namespace to the string when using `cimode`
 postProcess       | false               | string or array of postProcessors to apply per default
 returnNull        | true                | allows null values as valid translation
 returnEmptyString | true                | allows empty string as valid translation

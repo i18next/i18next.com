@@ -3,6 +3,21 @@ title: Migration Guide
 order: 10
 ---
 
+<a name="v7-x-x--v8-0-0"></a>
+### [v7.x.x to v8.0.0](#v7-x-x--v8-0-0)
+
+The `nonExplicitWhitelist` flag was changed to be used in user detected language too, before it was restricted to defined fallback languages only.
+
+```
+i18next.init({
+  fallbackLng: 'en',
+  whitelist: ['de', 'en', 'zh'],
+  nonExplicitWhitelist: true
+});
+
+// eg. `de-AT` will now pass the whitelist check
+```
+
 <a name="v6-x-x--v7-0-0"></a>
 ### [v6.x.x to v7.0.0](#v6-x-x--v7-0-0)
 

@@ -10,11 +10,13 @@ var typography = new Typography();
 var rhythm = typography.rhythm;
 
 function jsonToJSText(str) {
-  return str
+  var ret = str
     .replace(/"([^"]+(?=":))"/g, '$1') // remove " from "lng":
-    .replace(/:/g, ': ') // adds whitespace after :
     .replace(/,/g, ', ') // adds whitespace after ,
     .replace(/"/g, '\''); // replaces " with '
+
+  if (ret.indexOf('{') > -1) ret = ret.replace(/:/g, ': ') // adds whitespace after : if object (not in namespaces sample)
+  return ret;
 }
 
 export default React.createClass({

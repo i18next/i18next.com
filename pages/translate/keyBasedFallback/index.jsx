@@ -43,7 +43,8 @@ i18next is flexible enough to be used this way, you should init i18next with:
 
     i18next.init({
       nsSeparator: false,
-      keySeparator: false
+      keySeparator: false,
+      fallbackLng: false
     });
 
 Further using [sprintf post processor](../../docs/ecosystem/#postprocessors) enables sprintf.

@@ -16,6 +16,7 @@ framework         | description
 [ng-i18next](https://github.com/i18next/ng-i18next) | Angular1/2 provider, directive and filter
 [ng2-i18next](https://github.com/actimeo/ng2-i18next) | Angular2 service and directive
 [vue-i18next](https://github.com/rse/vue-i18next) | Vue plugin for integrating i18next
+[vue-i18next](https://github.com/panter/vue-i18next) | Vue plugin for integrating i18next
 [nodejs express middleware](https://github.com/i18next/i18next-express-middleware) | Middleware to use i18next in express.js (nodejs).
 [jquery plugin](https://github.com/i18next/jquery-i18next) | Plugin to use i18next on jquery selectors.
 [loc-i18next](https://github.com/mthh/loc-i18next) | Plugin to use same API as jquery-i18next but with html5 selectors

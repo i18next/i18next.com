@@ -19,6 +19,10 @@ module.exports = {
         "name": "Chiga",
         "nativeName": "Chiga"
     },
+    "cnr": {
+        "name": "Montenegrin",
+        "nativeName": "црногорски, crnogorski"
+    },
     "csb": {
         "name": "Kashubian",
         "nativeName": "Kashubian"
